@@ -81,6 +81,7 @@ $(document).ready(function() {
 
     $('.section_btn').stop().click(function() {
 
+    	// 解決動畫還沒載入完成就有新動畫加入時，在其他頁面上殘留漂浮動畫的bug
     	clearTimeout(circle_normal);
 
     	// 點擊選單後的active效果
@@ -93,7 +94,7 @@ $(document).ready(function() {
     	// 當前點擊的按鈕id
     	id = $(this).data('id');
 
-    	// 當目的地section與點擊的地點id相同時，代表已經在所點的按鈕那一頁了，停止移動圓球
+    	// 當目的地section與點擊的地點id相同時，代表已經在所點的按鈕那一頁了，停止移動星球
     	if (section == id) {
     		return false;
     	}
@@ -103,62 +104,10 @@ $(document).ready(function() {
 
     	old_section = section;
 
-    	// 移除星球常態性漂浮動畫
+    	// 移除星球常態性漂浮動畫，經過0.1秒後，開始旋轉星球
     	$img.removeClass('circle_normal').delay(100).queue(function() {
     		$(this).addClass('sec' + id + '_1').removeClass('sec' + old_section + '_1').dequeue();
     	});
-
-    	/*
-    	// 當點擊的section>2時，進行星球旋轉的動畫
-    	if (section > 2) {
-
-    		old_section = section;
-
-    		
-
-   //  		old_section = section;
-
-   //  		$img.addClass('sec' + old_section + '_1_out').removeClass('sec' + old_section + '_1');
-
-   //  		// 經過2.1秒後再將地球轉到目的頁
-	  //   	setTimeout(function() {
-	  //   		$img.addClass('sec' + id + '_1').removeClass('sec' + old_section + '_1_out');
-	  //   	}, 2100);
-
-			// console.log("id:"+id);
-   //  		console.log("old_section:"+old_section);
-   //  		console.log("section:"+section);
-
-	    	if (id >= 3) {
-	    		old_section = section;
-
-	    		console.log("id:"+id);
-	    		console.log("old_section:"+old_section);
-	    		console.log("section:"+section);
-
-	    		$img.addClass('sec3to6');
-
-	    		$img.addClass('sec' + id + '_2');
-	    	}
-	    	else {
-	    		old_section = section;
-
-	    		console.log("id:"+id);
-	    		console.log("old_section:"+old_section);
-	    		console.log("section:"+section);
-
-	    		$img.addClass('sec' + old_section + '_1_out').removeClass('sec' + old_section + '_1');
-
-	    		// 經過2.1秒後再將地球轉到目的頁
-		    	setTimeout(function() {
-		    		$img.addClass('sec' + id + '_1').removeClass('sec' + old_section + '_1_out');
-		    	}, 2100);
-	    	}
-    	}
-    	else {
-    		$img.addClass('sec' + id + '_1');
-    	}
-    	*/
     	
     	// 隱藏星球上的按鈕
     	$('.home_menu_hover').addClass('display_none');

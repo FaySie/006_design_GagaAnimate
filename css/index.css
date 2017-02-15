@@ -241,10 +241,6 @@ span {
 }
 
 .circle_cube img {
-	/*
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	*/
 	transition: all 2s;
 	position: absolute;
 	transform: rotate(0deg);
@@ -582,47 +578,10 @@ span {
 *****************************************/
 
 .circle_cube img.sec3_1 {
-	/*
-	animation-name: sec3_1;
-	*/
 	height: 250%;
 	transform: rotate(22deg);
 	right: -20%;
 	top: 10%;
-}
-
-.circle_cube img.sec3_1_out {
-	animation-name: sec3_1_out;
-}
-
-@keyframes sec3_1 {
-	from {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(22deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-}
-
-@keyframes sec3_1_out {
-	from {
-		transform: rotate(22deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-	to {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
 }
 
 /****************************************
@@ -687,47 +646,10 @@ span {
 *****************************************/
 
 .circle_cube img.sec4_1 {
-	/*
-	animation-name: sec4_1;
-	*/
 	height: 250%;
 	transform: rotate(-68deg);
 	right: -20%;
 	top: 10%;
-}
-
-.circle_cube img.sec4_1_out {
-	animation-name: sec4_1_out;
-}
-
-@keyframes sec4_1 {
-	from {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(-68deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-}
-
-@keyframes sec4_1_out {
-	from {
-		transform: rotate(-68deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-	to {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
 }
 
 /*******************************************************************
@@ -749,48 +671,10 @@ span {
 *****************************************/
 
 .circle_cube img.sec5_1 {
-	/*
-	animation-name: sec5_1;
-	animation-timing-function: ease;
-	*/
 	height: 250%;
 	transform: rotate(-150deg);
 	right: -20%;
 	top: 10%;
-}
-
-.circle_cube img.sec5_1_out {
-	animation-name: sec5_1_out;
-}
-
-@keyframes sec5_1 {
-	from {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(-150deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-}
-
-@keyframes sec5_1_out {
-	from {
-		transform: rotate(-150deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-	to {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
 }
 
 /*******************************************************************
@@ -812,139 +696,8 @@ span {
 *****************************************/
 
 .circle_cube img.sec6_1 {
-	/*
-	animation-name: sec6_1;
-	animation-timing-function: ease;
-	*/
 	height: 250%;
 	transform: rotate(-240deg);
 	right: -20%;
 	top: 10%;
 }
-
-.circle_cube img.sec6_1_out {
-	animation-name: sec6_1_out;
-}
-
-@keyframes sec6_1 {
-	from {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(-240deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-}
-
-@keyframes sec6_1_out {
-	from {
-		transform: rotate(-240deg);
-		height: 250%;
-		right: -20%;
-		top: 10%;
-	}
-	to {
-		transform: rotate(0deg);
-		height: inherit;
-		right: 5%;
-		top: 0;
-	}
-}
-
-/*******************************************************************
------------------------------section3~6-----------------------------
-********************************************************************/
-
-/*
-.circle_cube img.sec3to6 {
-	height: 250%;
-}
-
-.circle_cube img.sec3_2 {
-	animation-name: sec3_2;
-	transform: rotate(22deg);
-	right: -20%;
-	top: 10%;
-}
-
-@keyframes sec3_2 {
-	from {
-		transform: rotate(0deg);
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(22deg);
-		right: -20%;
-		top: 10%;
-	}
-}
-
-.circle_cube img.sec4_2 {
-	animation-name: sec4_1;
-	transform: rotate(-68deg);
-	right: -20%;
-	top: 10%;
-}
-
-@keyframes sec4_2 {
-	from {
-		transform: rotate(0deg);
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(-68deg);
-		right: -20%;
-		top: 10%;
-	}
-}
-
-.circle_cube img.sec5_2 {
-	animation-name: sec5_2;
-	animation-timing-function: ease;
-	transform: rotate(-150deg);
-	right: -20%;
-	top: 10%;
-}
-
-@keyframes sec5_2 {
-	from {
-		transform: rotate(0deg);
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(-150deg);
-		right: -20%;
-		top: 10%;
-	}
-}
-
-.circle_cube img.sec6_2 {
-	animation-name: sec6_2;
-	animation-timing-function: ease;
-	transform: rotate(-240deg);
-	right: -20%;
-	top: 10%;
-}
-
-@keyframes sec6_2 {
-	from {
-		transform: rotate(0deg);
-		right: 5%;
-		top: 0;
-	}
-	to {
-		transform: rotate(-240deg);
-		right: -20%;
-		top: 10%;
-	}
-}
-*/
-
