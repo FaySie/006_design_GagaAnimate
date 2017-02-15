@@ -1,0 +1,256 @@
+<!--DOCTYPE html-->
+<html>
+
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+	    <link href="css/index.css" rel="stylesheet" charset="utf-8" />
+	    <link href="css/bootstrap.css" rel="stylesheet" charset="utf-8" />
+	</head>
+
+	<body>
+	    <main>
+	        <!-- *****************************************************
+	    	loading animate
+			***************************************************** -->
+	        <!-- <div class="loading_wapper" id="loading_wapper">
+	            <div class="loading_progress">
+	                <div class="loading-role">
+	                    <img src="img/loading.svg" alt="now_loading">
+	                </div>
+	                <div class="loading_logo"></div>
+	                <div class="loading_count" id="loading_count">0%</div>
+	            </div>
+	        </div> -->
+	        <!-- *****************************************************
+	    	About video
+			***************************************************** -->
+	        <div class="video_box">
+	            <button class="video_close">X</button>
+	            <video preload loop controls id="video_gaga">
+	                <source src="video/gaga.mp4" type="video/mp4" /> 您的瀏覽器不支援HTML5影片播放，請節哀QQ。
+	                <source src="video/gaga.mp4" type="video/webm" />
+	            </video>
+	            <div class="poster hidden">
+	                <img src="" alt="">
+	            </div>
+	        </div>
+	        <!-- *****************************************************
+	    	navbar
+			***************************************************** -->
+	        <ul class="menubar">
+	            <li class="logo">
+	                <img class="img-responsive" src="img/logo.svg" alt="logo">
+	            </li>
+	            <a class="section_btn" href="#section1" data-id="1">
+	            	<li class="home hover_area active">
+	                	<span class="btn_menu section1_btn" href="#section1">
+	                		首頁
+	                	</span>
+	            	</li>
+	            </a>
+	            <a class="section2_btn" href="#section2">
+	            	<li class="gaga hover_area">
+	                	<span class="btn_menu section2_btn" href="#section2">
+	                		關於<br/>嘎嘎好農
+	                	</span>
+	            	</li>
+	            </a>
+	            <a class="section_btn section_btn3" href="#section3" data-id="3">
+	            	<li class="daanriver hover_area">
+	                	<span class="btn_menu section3_btn" href="#section3">
+	                		關於<br/>深耕德瑪汶
+	                	</span>
+	            	</li>
+	            </a>
+	            <a class="section_btn section_btn4" href="#section4" data-id="4">
+	            	<li class="spice hover_area">
+	                	<span class="btn_menu section4_btn" href="#section4">
+	                		泰雅<br/>特色香料
+	                	</span>
+	            	</li>
+	            </a>
+	            <a class="section_btn section_btn5" href="#section5" data-id="5">
+	            	<li class="farming hover_area">
+	                	<span class="btn_menu section5_btn" href="#section5">
+	                		友善農法
+	                	</span>
+	            	</li>
+	            </a>
+	            <a class="section_btn section_btn6" href="#section6" data-id="6">
+	            	<li class="fruit hover_area">
+	                	<span class="btn_menu section6_btn" href="#section6">
+	                		醜蔬果宣導
+	                	</span>
+	            	</li>
+	            </a>
+	        </ul>
+	        <!-- *****************************************************
+	    	section0
+	    	星球本體
+			***************************************************** -->
+	        <div id="section0">
+	            <div class="circle_hover">
+	                <div class="circle_cube" id="circle_cube">
+	                    <img class="img-responsive" src="img/circle.png" alt="circle">
+	                    <div class="circle_btn_hover circle_shandow_daanriver home_menu_hover">
+	                        <img src="img/circle_daanriver.png" alt="關於深耕德瑪汶">
+	                    </div>
+	                    <div class="circle_btn_hover circle_shandow_spice home_menu_hover">
+	                        <img src="img/circle_spice.png" alt="泰雅特色香料">
+	                    </div>
+	                    <div class="circle_btn_hover circle_shandow_farming home_menu_hover">
+	                        <img src="img/circle_farming.png" alt="友善農法">
+	                    </div>
+	                    <div class="circle_btn_hover circle_shandow_fruit home_menu_hover">
+	                        <img src="img/circle_fruit.png" alt="醜蔬果宣導">
+	                    </div>
+	                </div>
+	                <a class="circle_daanriver circle_outside circle_outside3 home_menu_hover section3_btn section_btn" data-shandow="daanriver" data-id="3" href="#section3">
+	                    <div class="circle_btn">
+	                        <p>關於
+	                            <br/>深耕德瑪汶</p>
+	                    </div>
+	                </a>
+	                <a class="circle_spice circle_outside circle_outside4 home_menu_hover section4_btn section_btn" data-shandow="spice" data-id="4" href="#section4">
+	                    <div class="circle_btn">
+	                        <p>泰雅
+	                            <br/>特色香料</p>
+	                    </div>
+	                </a>
+	                <a class="circle_farming circle_outside circle_outside5 home_menu_hover section5_btn section_btn" data-shandow="farming" data-id="5" href="#section5">
+	                    <div class="circle_btn">
+	                        <p>友善農法</p>
+	                    </div>
+	                </a>
+	                <a class="circle_fruit circle_outside circle_outside6 home_menu_hover section6_btn section_btn" data-shandow="fruit" data-id="6" href="#section6">
+	                    <div class="circle_btn">
+	                        <p>醜蔬果宣導</p>
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+	        <!-- *****************************************************
+	    	section1
+	    	首頁物件：漂浮島、跳跳蟲、提示框
+			***************************************************** -->
+	        <div id="section1" class="section-data">
+	            <div class="bird_cube">
+	                <div class="bird">
+	                    <img class="img-responsive bird_animate" src="img/bird.png" alt="bird">
+	                </div>
+	            </div>
+	            <div class="island_cube">
+	                <div class="island1">
+	                    <img class="island1_img" src="img/island1.png" alt="island">
+	                    <div class="hint">
+	                        <p>
+	                            按下鍵盤上的 <img src="img/g_key3.svg" alt="按下G">
+	                            <br/> 或
+	                            <br/> 點擊星球開始了解嘎嘎好農！
+	                        </p>
+	                    </div>
+	                </div>
+	                <div class="island2">
+	                    <img class="img-responsive" src="img/island2.png" alt="island">
+	                    <div class="jump"></div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- *****************************************************
+	    	section2
+	    	關於嘎嘎好農：彈跳式視窗
+			***************************************************** -->
+	        <div id="section2" class="section-data">
+	            <div class="section2_text_area">
+	                <button class="section2_text_area_close">X</button>
+	                <div class="section2_text">
+	                    <article>
+	                        <p>什麼是嘎嘎好農？ What's the Gaga Farming?</p>
+	                        嘎嘎好農是國立臺中科技大學商業設計系106級的畢業專題， 我們將針對泰雅族達觀部落進行其理念及友善農法的推廣設計。 希望透過網路平台的方式推廣達觀友善農法以及正確的土地作息理念， 並為泰雅傳統特色香料、友善農法、醜蔬果繪製資訊圖表進行設計與推廣， 讓人們可以更了解這塊土地。
+	                    </article>
+	                    <article>
+	                        <p>嘎嘎好農團隊成員 Members</p>
+	                        嘎嘎好農是一個視覺傳達跨數位媒體的設計團隊。 我們的組員來自不同的科系， 並專注在網頁、插畫、印刷、3D建模等不同的設計領域， 我們相信一個跨領域的合作可以讓世界變得更美好♥
+	                    </article>
+	                    <article>
+	                        <p>我們的業主 Clinets</p>
+	                        深耕德瑪汶協會
+	                    </article>
+	                    <article>
+	                        <p>特別感謝 Special Thanks</p>
+	                        神秘A宇宙基地：外星人、宇宙人、太空人
+	                        <br/> 地心探索隊：挖路的、探照燈、推土機、地鼠
+	                        <br/> 極地生態圈：北極熊、企鵝、雪兔
+	                    </article>
+	                </div>
+	            </div>
+	            <div class="section2_mask"></div>
+	        </div>
+	        <!-- *****************************************************
+	    	section3
+	    	關於深耕德瑪汶
+			***************************************************** -->
+	        <div id="section3" class="section-data">
+	            <div class="section3_left">
+	                <article>
+	                    <p>「德瑪汶」是泰雅語「深耕」的意思</p>
+	                    在台中和苗栗分界的大安溪畔，散落著13個泰雅族部落， 在此成立了深耕德瑪汶協會。
+	                </article>
+	            </div>
+	            <div class="section3_right">
+	                <article>
+	                    <p>土地是生命，深耕會發芽</p>
+	                    在部落生活久了，發現要回歸土地、向土
+	                    <br/> 地學習，才能更貼近泰雅文化以及 Gaga
+	                    <br/> 精神，因此才會有「農」這件事，並開始
+	                    <br/> 與土地學習。
+	                    <br/>
+	                    <br/> 經過一段長時間不斷的修正和進步，發展
+	                    <br/> 出具備文化能力、尊重泰雅 Gaga 祖先遺
+	                    <br/> 訓的「深耕德瑪汶協會」。
+	                    <br/>
+	                    <br/> 協會將營收反饋回部落共同照顧體系，對部
+	                    <br/> 落有照顧需求的弱勢人口提供送餐、醫療接
+	                    <br/> 送車、獎助學金、儲蓄互助、家暴防治與輔
+	                    <br/> 導以及個案服務。
+	                </article>
+	            </div>
+	        </div>
+	        <!-- *****************************************************
+	    	section4
+	    	泰雅特色香料
+			***************************************************** -->
+	        <div id="section4" class="section-data">
+	            <div class="section4_left">
+	                <article>
+	                </article>
+	            </div>
+	            <div class="section4_right">
+	                <article>
+	                </article>
+	            </div>
+	        </div>
+	        <!-- *****************************************************
+	    	section5
+	    	友善農法
+			***************************************************** -->
+	        <div id="section5" class="section-data">
+	        </div>
+	        <!-- *****************************************************
+	    	section6
+	    	醜蔬果宣導
+			***************************************************** -->
+	        <div id="section6" class="section-data">
+	        </div>
+	    </main>
+	    <!-- *****************************************************
+	    script
+		***************************************************** -->
+	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	    <!-- <script src="js/preload.js"></script> -->
+	    <script src="js/script.js"></script>
+	    <script src="js/bootstrap.js"></script>
+	</body>
+
+</html>
