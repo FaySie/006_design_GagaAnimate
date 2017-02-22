@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	// 呼叫預先載入的函式
+	preloader();
+	loading_over = false;
+
     /*--------------------------------------------------
     section1
     首頁動畫效果
@@ -139,4 +143,72 @@ $(document).ready(function() {
     	var circle_btn_class = $(this).data('id');
     	$('.section_btn' + circle_btn_class).children().addClass('active');
     });
+
+    /*--------------------------------------------------
+    preload
+    預先載入圖片
+    --------------------------------------------------*/
+
+    function preloader() {
+
+    	// 預載圖片清單
+		imageToLoad = [
+			"/img/text_01.svg",
+			"/img/text_02.svg",
+			"/img/text_03.svg",
+			"/img/text_04.svg",
+			"/img/text_05.svg",
+			"/img/title_01.svg",
+			"/img/title_02.svg",
+			"/img/title_03.svg",
+			"/img/title_04.svg",
+			"/img/title_05.svg",
+			"/img/title_06.svg",
+			"/img/title_hover.svg",
+			"/img/title.svg",
+			"/img/circle.svg",
+			"/img/loading.svg",
+			"/img/logo.svg",
+			"/img/none2.gif",
+			"/img/g_key3.png",
+			"/img/bg.jpg",
+			"/img/bird.png",
+			"/img/island1.png",
+			"/img/island2.png",
+			"/img/circle_daanriver.png",
+			"/img/circle_farming.png",
+			"/img/circle_fruit.png",
+			"/img/circle_spice.png",
+			"/img/circle.png"
+		];
+
+		var i, images, src, _i, _len, _results;
+
+		imageLoaded = 0;
+		images = [];
+		_results = [];
+
+		for ( i = _i = 0, _len = imageToLoad.length; _i < _len; i = ++_i) {
+			src = imageToLoad[i];
+			
+			images[i] = new Image();
+			images[i].src = location.href + src;
+			images[i].style.display = 'hidden';
+
+			_results.push(images[i].onload = countPercentage());
+		}
+	}
+
+	function countPercentage() {
+		var percentage;
+		imageLoaded++;
+
+		if (imageLoaded >= imageToLoad.length) {
+			$('#loading_count').html("100 %");
+			$("#loading_wapper").fadeOut();
+		} else {
+			percentage = parseInt(100 * imageLoaded / imageToLoad.length);
+			$('#loading_count').html("" + percentage + " %");
+		};
+	}
 });

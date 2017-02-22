@@ -46,7 +46,9 @@ span {
 
 .loading_wapper {
     z-index: 10;
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -62,16 +64,12 @@ span {
     transform: translate(-50%,-50%);
 }
 
-.loading_scroll {
-    overflow-y: hidden;
-}
-
 .loading_count {
 	color: white;
 	font-size: 1rem;
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 50vh;
 	transform: translate(-50%,-50%);
 }
 
