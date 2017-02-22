@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	// 呼叫預先載入的函式
-	preloader();
-	loading_over = false;
+    // 呼叫預先載入的函式
+    preloader();
+    loading_over = false;
 
     /*--------------------------------------------------
     section1
@@ -10,48 +10,48 @@ $(document).ready(function() {
     --------------------------------------------------*/
     
     setTimeout(function() {
-    	$('.circle_cube img').addClass('circle_normal');
+        $('.circle_cube img').addClass('circle_normal');
     }, 1000);
 
 
- 	// 選單列hover效果
+    // 選單列hover效果
     $('.hover_area').hover(function() {
-    	$(this).addClass('bg_hover');
-    	$(this).children('.btn_menu').addClass('btn_menu_hover');
+        $(this).addClass('bg_hover');
+        $(this).children('.btn_menu').addClass('btn_menu_hover');
     }, function() {
-    	$(this).removeClass('bg_hover');
-    	$(this).children('.btn_menu').removeClass('btn_menu_hover');
+        $(this).removeClass('bg_hover');
+        $(this).children('.btn_menu').removeClass('btn_menu_hover');
     });
 
     // 星球hover圓形效果
     $('.circle_hover a').hover(function() {
-    	$(this).children('.circle_btn').addClass('open');
-   	}, function() {
-    	$(this).children('.circle_btn').removeClass('open');
+        $(this).children('.circle_btn').addClass('open');
+    }, function() {
+        $(this).children('.circle_btn').removeClass('open');
     });
 
     // 星球上的hover立體效果
     $('.circle_outside').hover(function() {
-    	btn_class = $(this).data('shandow');
-    	$('.circle_shandow_' + btn_class).addClass('show');
+        btn_class = $(this).data('shandow');
+        $('.circle_shandow_' + btn_class).addClass('show');
     }, function() {
-    	btn_class = $(this).data('shandow');
-    	$('.circle_shandow_' + btn_class).removeClass('show');
+        btn_class = $(this).data('shandow');
+        $('.circle_shandow_' + btn_class).removeClass('show');
     });
 
     // 按下G，影片彈出效果
     $('body').keydown(function(event){
         if(event.which == 71){
-        	$('.video_box').addClass('video_open');
-        	$('#video_gaga')[0].play(); //$('#video_gaga')會搜尋所有id形成一個陣列，必須指定陣列[0]才能控制
+            $('.video_box').addClass('video_open');
+            $('#video_gaga')[0].play(); //$('#video_gaga')會搜尋所有id形成一個陣列，必須指定陣列[0]才能控制
         }
     });
 
     // 按下右上角的關閉，影片掰掰
     $('.video_close').click(function() {
-    	$('.video_box').removeClass('video_open');
-    	$('#video_gaga')[0].pause();
-    	$('#video_gaga')[0].currentTime = 0; //按下關閉時，影片回到0秒的地方
+        $('.video_box').removeClass('video_open');
+        $('#video_gaga')[0].pause();
+        $('#video_gaga')[0].currentTime = 0; //按下關閉時，影片回到0秒的地方
     });
 
     /*--------------------------------------------------
@@ -60,15 +60,15 @@ $(document).ready(function() {
     --------------------------------------------------*/
 
     $('.section2_btn').click(function() {
-    	$('#section2').fadeIn();
+        $('#section2').fadeIn();
     });
 
     $('.section2_text_area_close').click(function() {
-    	$('#section2').fadeOut();
+        $('#section2').fadeOut();
     });
 
     $('.section2_mask').click(function() {
-    	$('#section2').fadeOut();
+        $('#section2').fadeOut();
     });
 
     /*--------------------------------------------------
@@ -85,63 +85,63 @@ $(document).ready(function() {
 
     $('.section_btn').stop().click(function() {
 
-    	// 解決動畫還沒載入完成就有新動畫加入時，在其他頁面上殘留漂浮動畫的bug
-    	clearTimeout(circle_normal);
+        // 解決動畫還沒載入完成就有新動畫加入時，在其他頁面上殘留漂浮動畫的bug
+        clearTimeout(circle_normal);
 
-    	// 點擊選單後的active效果
-    	$('.menubar li').removeClass('active');
-    	$(this).children().addClass('active');
-    	$('.circle_hover').removeClass('active');
+        // 點擊選單後的active效果
+        $('.menubar li').removeClass('active');
+        $(this).children().addClass('active');
+        $('.circle_hover').removeClass('active');
 
-    	// 星球
-    	$img = $('.circle_cube img');
-    	// 當前點擊的按鈕id
-    	id = $(this).data('id');
+        // 星球
+        $img = $('.circle_cube img');
+        // 當前點擊的按鈕id
+        id = $(this).data('id');
 
-    	// 當目的地section與點擊的地點id相同時，代表已經在所點的按鈕那一頁了，停止移動星球
-    	if (section == id) {
-    		return false;
-    	}
+        // 當目的地section與點擊的地點id相同時，代表已經在所點的按鈕那一頁了，停止移動星球
+        if (section == id) {
+            return false;
+        }
 
-    	// 所有section先隱藏
-    	$('.section-data').fadeOut();
+        // 所有section先隱藏
+        $('.section-data').fadeOut();
 
-    	old_section = section;
+        old_section = section;
 
-    	// 移除星球常態性漂浮動畫，經過0.1秒後，開始旋轉星球
-    	$img.removeClass('circle_normal').delay(100).queue(function() {
-    		$(this).addClass('sec' + id + '_1').removeClass('sec' + old_section + '_1').dequeue();
-    	});
-    	
-    	// 隱藏星球上的按鈕
-    	$('.home_menu_hover').addClass('display_none');
+        // 移除星球常態性漂浮動畫，經過0.1秒後，開始旋轉星球
+        $img.removeClass('circle_normal').delay(100).queue(function() {
+            $(this).addClass('sec' + id + '_1').removeClass('sec' + old_section + '_1').dequeue();
+        });
+        
+        // 隱藏星球上的按鈕
+        $('.home_menu_hover').addClass('display_none');
 
-    	// 移除星球自適應大小的class
-    	$img.removeClass('img-responsive');
+        // 移除星球自適應大小的class
+        $img.removeClass('img-responsive');
 
-    	// 經過2.5秒後，該頁物件才fadeIn進來
-    	setTimeout(function() {
-    		$('#section' + id).fadeIn();
-	    }, 2500);
+        // 經過2.5秒後，該頁物件才fadeIn進來
+        setTimeout(function() {
+            $('#section' + id).fadeIn();
+        }, 2500);
 
-    	// 指定當前section為id
-    	section = id;
+        // 指定當前section為id
+        section = id;
 
-    	// 當點擊的section是第一頁時，顯示星球按鈕，並於3秒後回復星球常態性漂浮動畫
-    	if (id == 1) {
-    		$('.home_menu_hover').removeClass('display_none');
+        // 當點擊的section是第一頁時，顯示星球按鈕，並於3秒後回復星球常態性漂浮動畫
+        if (id == 1) {
+            $('.home_menu_hover').removeClass('display_none');
 
-    		circle_normal = setTimeout(function() {
-	    		$img.addClass('circle_normal');
-	    		$('#section1').fadeIn();
-    		}, 3000);
-		}
+            circle_normal = setTimeout(function() {
+                $img.addClass('circle_normal');
+                $('#section1').fadeIn();
+            }, 3000);
+        }
     });
 
     // 點擊星球上的按鈕，改變當前頁數的hover狀態
     $('.circle_outside').click(function() {
-    	var circle_btn_class = $(this).data('id');
-    	$('.section_btn' + circle_btn_class).children().addClass('active');
+        var circle_btn_class = $(this).data('id');
+        $('.section_btn' + circle_btn_class).children().addClass('active');
     });
 
     /*--------------------------------------------------
@@ -151,64 +151,64 @@ $(document).ready(function() {
 
     function preloader() {
 
-    	// 預載圖片清單
-		imageToLoad = [
-			"/img/text_01.svg",
-			"/img/text_02.svg",
-			"/img/text_03.svg",
-			"/img/text_04.svg",
-			"/img/text_05.svg",
-			"/img/title_01.svg",
-			"/img/title_02.svg",
-			"/img/title_03.svg",
-			"/img/title_04.svg",
-			"/img/title_05.svg",
-			"/img/title_06.svg",
-			"/img/title_hover.svg",
-			"/img/title.svg",
-			"/img/circle.svg",
-			"/img/loading.svg",
-			"/img/logo.svg",
-			"/img/none2.gif",
-			"/img/g_key3.png",
-			"/img/bg.jpg",
-			"/img/bird.png",
-			"/img/island1.png",
-			"/img/island2.png",
-			"/img/circle_daanriver.png",
-			"/img/circle_farming.png",
-			"/img/circle_fruit.png",
-			"/img/circle_spice.png",
-			"/img/circle.png"
-		];
+        // 預載圖片清單
+        imageToLoad = [
+            "/img/text_01.svg",
+            "/img/text_02.svg",
+            "/img/text_03.svg",
+            "/img/text_04.svg",
+            "/img/text_05.svg",
+            "/img/title_01.svg",
+            "/img/title_02.svg",
+            "/img/title_03.svg",
+            "/img/title_04.svg",
+            "/img/title_05.svg",
+            "/img/title_06.svg",
+            "/img/title_hover.svg",
+            "/img/title.svg",
+            "/img/circle.svg",
+            "/img/loading.svg",
+            "/img/logo.svg",
+            "/img/none2.gif",
+            "/img/g_key3.png",
+            "/img/bg.jpg",
+            "/img/bird.png",
+            "/img/island1.png",
+            "/img/island2.png",
+            "/img/circle_daanriver.png",
+            "/img/circle_farming.png",
+            "/img/circle_fruit.png",
+            "/img/circle_spice.png",
+            "/img/circle.png"
+        ];
 
-		var i, images, src, _i, _len, _results;
+        var i, images, src, _i, _len, _results;
 
-		imageLoaded = 0;
-		images = [];
-		_results = [];
+        imageLoaded = 0;
+        images = [];
+        _results = [];
 
-		for ( i = _i = 0, _len = imageToLoad.length; _i < _len; i = ++_i) {
-			src = imageToLoad[i];
-			
-			images[i] = new Image();
-			images[i].src = location.href + src;
-			images[i].style.display = 'hidden';
+        for ( i = _i = 0, _len = imageToLoad.length; _i < _len; i = ++_i) {
+            src = imageToLoad[i];
+            
+            images[i] = new Image();
+            images[i].src = location.href + src;
+            images[i].style.display = 'hidden';
 
-			_results.push(images[i].onload = countPercentage());
-		}
-	}
+            _results.push(images[i].onload = countPercentage());
+        }
+    }
 
-	function countPercentage() {
-		var percentage;
-		imageLoaded++;
+    function countPercentage() {
+        var percentage;
+        imageLoaded++;
 
-		if (imageLoaded >= imageToLoad.length) {
-			$('#loading_count').html("100 %");
-			$("#loading_wapper").fadeOut();
-		} else {
-			percentage = parseInt(100 * imageLoaded / imageToLoad.length);
-			$('#loading_count').html("" + percentage + " %");
-		};
-	}
+        if (imageLoaded >= imageToLoad.length) {
+            $('#loading_count').html("100 %");
+            $("#loading_wapper").fadeOut();
+        } else {
+            percentage = parseInt(100 * imageLoaded / imageToLoad.length);
+            $('#loading_count').html("" + percentage + " %");
+        };
+    }
 });
