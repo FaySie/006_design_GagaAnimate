@@ -175,10 +175,21 @@ $(document).ready(function() {
             "/img/bird.png",
             "/img/island1.png",
             "/img/island2.png",
+            "/img/farming_btn01.png",
+            "/img/farming_btn02.png",
+            "/img/farming_btn03.png",
+            "/img/farming_btn04.png",
+            "/img/fruit_btn01.png",
+            "/img/fruit_btn02.png",
+            "/img/daanriver_btn01.png",
+            "/img/daanriver_btn02.png",
             "/img/circle_daanriver.png",
             "/img/circle_farming.png",
             "/img/circle_fruit.png",
             "/img/circle_spice.png",
+            "/img/circle_spice_btn01.png",
+            "/img/circle_spice_btn02.png",
+            "/img/circle_spice_btn03.png",
             "/img/circle.png"
         ];
 
