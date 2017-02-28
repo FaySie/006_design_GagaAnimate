@@ -222,4 +222,19 @@ $(document).ready(function() {
             $('#loading_count').html("" + percentage + " %");
         };
     }
+
+    /*--------------------------------------------------
+    section4
+    泰雅特色香料
+    --------------------------------------------------*/
+
+    // 3顆香料樹的hover立體效果
+    $('.spice_btn').hover(function() {
+        spice_btn_class = $(this).data('btn');
+        $('.spice_btn_img_' + spice_btn_class).addClass('show');
+    }, function() {
+        spice_btn_class = $(this).data('btn');
+        $('.spice_btn_img_' + spice_btn_class).removeClass('show');
+    });
+      
 });

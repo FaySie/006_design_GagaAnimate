@@ -639,6 +639,73 @@ span {
 	overflow: hidden;
 }
 
+.spice_btn_hover {
+	position: relative;
+	z-index: 300;
+}
+
+.spice_btn {
+	width: 21vw;
+	height: 21vw;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.spice_btn_1 {
+	top: 21vh;
+	left: 18%;
+}
+
+.spice_btn_2 {
+	top: 10vh;
+	left: 38%;
+}
+
+.spice_btn_3 {
+	top: 10vh;
+	left: 59%;
+}
+
+.spice_btn:hover {
+	text-decoration: none;
+}
+
+.spice_btn div {
+	text-align: center;
+	position: relative;
+	left: 45%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.spice_btn p {
+	color: #fff;
+	font-size: 2.5rem;
+	display: inline;
+}
+
+.spice_btn_img {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.spice_btn_img.show {
+	opacity: 1;
+}
+
+.spice_btn_img img {
+	position: absolute;
+	height: 250%;
+	transform: rotate(-68deg);
+	right: -20%;
+	top: 10%;
+}
+
 /****************************************
 -----------------過場動畫-----------------
 *****************************************/
