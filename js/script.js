@@ -184,6 +184,8 @@ $(document).ready(function() {
             "/img/tana04.png",
             "/img/tana05.png",
             "/img/tana06.png",
+            "/img/bank01.png",
+            "/img/bank02.png",
             "/img/farming_btn01.png",
             "/img/farming_btn02.png",
             "/img/farming_btn03.png",
