@@ -557,6 +557,35 @@ span {
 	background-color: rgba(256,256,256,0.5);
 }
 
+.section2_text article {
+	margin-bottom: 40px;
+}
+
+.section2_text div {
+	display: inline-block;
+}
+
+.date_circle {
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	border: 3px #FBB11D solid;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.date_circle div {
+	width: 100%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.date_today {
+	background-color: rgba(251,177,29,0.5);
+}
+
 /*******************************************************************
 ------------------------------section3------------------------------
 ********************************************************************/
