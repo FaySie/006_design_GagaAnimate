@@ -249,6 +249,25 @@ $(document).ready(function() {
         $('.spice_btn_img_' + spice_btn_class).removeClass('show');
     });
     
+    // 點擊香料樹開啟資訊圖表
+    $('.spice_btn').click(function() {
+        spice_btn_class = $(this).data('btn');
+        $('.info_' + spice_btn_class).fadeIn();
+        $('.info_mask').fadeIn();
+        $('.menubar').fadeOut();
+        $('.spice_btn').fadeOut();
+        $('.spice_btn_img').fadeOut();
+    });
+
+    // 點擊X關閉資訊圖表
+    $('.info_2_close').click(function() {
+        $('.info_2').fadeOut();
+        $('.info_mask').fadeOut();
+        $('.menubar').fadeIn();
+        $('.spice_btn').fadeIn();
+        $('.spice_btn_img').fadeIn();
+    });
+
     /*--------------------------------------------------
     section5
     友善農法
@@ -261,12 +280,14 @@ $(document).ready(function() {
         $('.menubar').fadeOut();
     });
 
+    // 點擊X時關閉地圖
     $('.section5_map_close').click(function() {
         $('#map').fadeOut();
         $('.map_mask').fadeOut();
         $('.menubar').fadeIn();
     });
 
+    // 點擊背景遮罩關閉地圖
     $('.map_mask').click(function() {
         $('#map').fadeOut();
         $(this).fadeOut();

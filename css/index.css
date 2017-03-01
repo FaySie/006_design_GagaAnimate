@@ -639,6 +639,28 @@ span {
 	overflow: hidden;
 }
 
+.section4_text {
+	z-index: 1;
+	position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 30%;
+    height: 30%;
+    background: url(../img/text_04.svg) center no-repeat;
+    background-size: contain;
+}
+
+.section4_text article {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/****************************************
+----------------香料樹按鈕----------------
+*****************************************/
+
 .spice_btn_hover {
 	position: relative;
 	z-index: 300;
@@ -704,6 +726,73 @@ span {
 	transform: rotate(-68deg);
 	right: -20%;
 	top: 10%;
+}
+
+/****************************************
+---------------刺蔥資訊圖表---------------
+*****************************************/
+
+.info_2 {
+	display: none;
+	z-index: 1;
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url("../img/info_bg.svg") no-repeat center;
+	background-size: contain;
+	text-align: center;
+}
+
+.info_2 div {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	opacity: 0.8;
+	position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.info_2 img {
+	height: inherit;
+	border-bottom: #30539d 1px solid;
+	margin: 0 auto;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
+.info_mask {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.info_close {
+	z-index: 10;
+	position: absolute;
+	right: 3%;
+	top: 5%;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	font-size: 2.5rem;
+	background-color: transparent;
+	border: #fff 2px solid;
+	border-radius: 50%;
+}
+
+.info_close:hover {
+	background-color: rgba(256,256,256,0.5);
 }
 
 /****************************************
