@@ -293,4 +293,16 @@ $(document).ready(function() {
         $(this).fadeOut();
         $('.menubar').fadeIn();
     });
+
+    /*--------------------------------------------------
+    section6
+    醜蔬果
+    --------------------------------------------------*/
+    $('.section6_btn_2').hover(function() {
+        $(this).children('div').addClass('bank_img_hover');
+        $(this).children('div').children('p').addClass('bank_text_hover');
+    }, function() {
+        $(this).children('div').removeClass('bank_img_hover');
+        $(this).children('div').children('p').removeClass('bank_text_hover');
+    });
 });

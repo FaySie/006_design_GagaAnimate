@@ -950,6 +950,73 @@ span {
 	overflow: hidden;
 }
 
+.section6_text {
+	z-index: 1;
+	position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 30%;
+    height: 30%;
+    background: url(../img/text_04.svg) center no-repeat;
+    background-size: contain;
+}
+
+.section6_text article {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.section6_btn_1 div {
+    position: absolute;
+    left: 10%;
+    top: 63%;
+    width: 12%;
+    height: 35%;
+    background: url(../img/fruit_btn01.png) no-repeat;
+    background-size: contain;
+}
+
+.section6_btn_1 div:hover {
+	background: url(../img/fruit_btn02.png) no-repeat;
+    background-size: contain;
+}
+
+/****************************************
+-----------------食物銀行-----------------
+*****************************************/
+
+.section6_btn_2 div {
+    position: absolute;
+    right: 25%;
+    top: 57%;
+    width: 12%;
+    height: 35%;
+    background: url(../img/bank01.png) no-repeat;
+    background-size: contain;
+}
+
+.section6_btn_2 div.bank_img_hover {
+	background: url(../img/bank02.png) no-repeat;
+    background-size: contain;
+}
+
+.section6_btn_2 p {
+	display: inline;
+    padding: 10px;
+    color: #333;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3px;
+    position: relative;
+    left: 100%;
+    top: 45%;
+}
+
+.section6_btn_2 p.bank_text_hover {
+	background-color: #fff;
+}
+
 /****************************************
 -----------------過場動畫-----------------
 *****************************************/
