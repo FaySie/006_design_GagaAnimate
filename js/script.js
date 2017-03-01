@@ -274,22 +274,22 @@ $(document).ready(function() {
     --------------------------------------------------*/
     
     // 點擊地圖觀看大圖
-    $('.section5_btn_left').click(function() {
-        $('#map').fadeIn();
-        $('.map_mask').fadeIn();
+    $('.section5_btn_1').click(function() {
+        $('.section5_btn_img').fadeIn();
+        $('.section5_mask').fadeIn();
         $('.menubar').fadeOut();
     });
 
     // 點擊X時關閉地圖
     $('.section5_map_close').click(function() {
-        $('#map').fadeOut();
-        $('.map_mask').fadeOut();
+        $('.section5_btn_img').fadeOut();
+        $('.section5_mask').fadeOut();
         $('.menubar').fadeIn();
     });
 
     // 點擊背景遮罩關閉地圖
-    $('.map_mask').click(function() {
-        $('#map').fadeOut();
+    $('.section5_mask').click(function() {
+        $('.section5_btn_img').fadeOut();
         $(this).fadeOut();
         $('.menubar').fadeIn();
     });
