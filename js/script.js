@@ -61,14 +61,17 @@ $(document).ready(function() {
 
     $('.section2_btn').click(function() {
         $('#section2').fadeIn();
+        $('.menubar').fadeOut();
     });
 
     $('.section2_text_area_close').click(function() {
         $('#section2').fadeOut();
+        $('.menubar').fadeIn();
     });
 
     $('.section2_mask').click(function() {
         $('#section2').fadeOut();
+        $('.menubar').fadeIn();
     });
 
     /*--------------------------------------------------
@@ -190,7 +193,8 @@ $(document).ready(function() {
             "/img/circle_spice_btn01.png",
             "/img/circle_spice_btn02.png",
             "/img/circle_spice_btn03.png",
-            "/img/circle.png"
+            "/img/circle.png",
+            "/img/daanriver_map.png"
         ];
 
         var i, images, src, _i, _len, _results;
@@ -236,5 +240,28 @@ $(document).ready(function() {
         spice_btn_class = $(this).data('btn');
         $('.spice_btn_img_' + spice_btn_class).removeClass('show');
     });
-      
+    
+    /*--------------------------------------------------
+    section5
+    友善農法
+    --------------------------------------------------*/
+    
+    // 點擊地圖觀看大圖
+    $('.section5_btn_left').click(function() {
+        $('#map').fadeIn();
+        $('.map_mask').fadeIn();
+        $('.menubar').fadeOut();
+    });
+
+    $('.section5_map_close').click(function() {
+        $('#map').fadeOut();
+        $('.map_mask').fadeOut();
+        $('.menubar').fadeIn();
+    });
+
+    $('.map_mask').click(function() {
+        $('#map').fadeOut();
+        $(this).fadeOut();
+        $('.menubar').fadeIn();
+    });
 });

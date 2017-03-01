@@ -45,7 +45,7 @@ span {
 ********************************************************************/
 
 .loading_wapper {
-    z-index: 10;
+    z-index: 16;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -79,7 +79,7 @@ span {
 
 .video_box {
 	display: none;
-	z-index: 10;
+	z-index: 20;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -122,7 +122,7 @@ span {
 ********************************************************************/
 
 .menubar {
-	z-index: 9;
+	z-index: 15;
 	width: 100%;
 	height: 100px;
 	position: absolute;
@@ -729,6 +729,63 @@ span {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	z-index: 14;
+}
+
+.daanriver_left {
+	position: absolute;
+	left: 14%;
+	top: 35%;
+	width: 30%;
+	height: 50%;
+	background: url("../img/daanriver_btn01.png") no-repeat;
+	background-size: contain;
+}
+
+.daanriver_left:hover {
+	background: url("../img/daanriver_btn02.png") no-repeat;
+	background-size: contain;
+}
+
+#map {
+	display: none;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: url("../img/daanriver_map.png") no-repeat center;
+	background-size: contain;
+	position: relative;
+	z-index: 200;
+}
+
+.map_mask {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.section5_map_close {
+	z-index: 10;
+	position: absolute;
+	right: 3%;
+	top: 5%;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	font-size: 2.5rem;
+	background-color: transparent;
+	border: #fff 2px solid;
+	border-radius: 50%;
+}
+
+.section5_map_close:hover {
+	background-color: rgba(256,256,256,0.5);
 }
 
 /****************************************
