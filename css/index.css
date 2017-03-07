@@ -33,7 +33,7 @@ p {
 
 a,
 span {
-	font-size: 1.25rem;
+	font-size: 1.4rem;
 }
 
 .display_none {
@@ -136,24 +136,28 @@ span {
 .daanriver,
 .spice,
 .farming,
-.fruit {
+.fruit,
+.blog {
 	display: inline-block;
-	width: 160px;
-	height: 50px;
+	width: 140px;
+	height: 45px;
 	background-size: cover !important;
 	text-align: center;
 }
 
-.logo img {
-	height: inherit;
+.hover_area {
+	border-right: 1px dashed #333;
 }
 
-.hover_area {
-	background: url(../img/text_02.svg) center;
+.blog {
+	border-right: 0;
+}
+
+.hover_area div {
+	width: 80%;
 }
 
 .active {
-	background: url(../img/text_03.svg) center;
 	color: #333;
 	letter-spacing: 1px;
 }
@@ -162,39 +166,51 @@ span {
 	color: #333;
 }
 
+.active div::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: #FBB11D;
+}
+
 .btn_menu {
 	color: #333;
 	letter-spacing: 1px;
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	transition: all 1s ease;
 }
 
-.btn_menu:hover {
-	color: #fff;
-}
-
-.btn_menu:hover,
-.btn_menu:focus,
-.btn_menu:active {
-	text-decoration: none;
+.btn_menu h6{
+	margin-top: 7px;
 }
 
 /****************************************
 -----------------js hover----------------
 *****************************************/
 
-.bg_hover {
-	background: url(../img/text_03.svg) center;
+.btn_menu_hover {
+	color: #FFFDE5;
+	text-decoration: none;
 }
 
-.btn_menu_hover {
-	letter-spacing: 2px;
-	color: #fff;
-	font-size: 1.25rem;
-	text-decoration: none;
+.btn_menu_hover::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 4px;
+	background-color: #FBB11D;
+	transition: all 0.35s;
+}
+
+.btn_menu_hover:hover::after {
+	width: 100%;
 }
 
 /*******************************************************************
@@ -1055,4 +1071,19 @@ span {
 	transform: rotate(-240deg);
 	right: -20%;
 	top: 10%;
+}
+
+/*******************************************************************
+-------------------------------footer-------------------------------
+********************************************************************/
+
+.footer {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 2.5%;
+}
+
+.footer h6 {
+	color: #666;
 }

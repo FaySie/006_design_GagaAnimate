@@ -13,14 +13,11 @@ $(document).ready(function() {
         $('.circle_cube img').addClass('circle_normal');
     }, 1000);
 
-
     // 選單列hover效果
-    $('.hover_area').hover(function() {
-        $(this).addClass('bg_hover');
-        $(this).children('.btn_menu').addClass('btn_menu_hover');
+    $('.hover_a').hover(function() {
+        $(this).children('.hover_area').children('.btn_menu').addClass('btn_menu_hover');
     }, function() {
-        $(this).removeClass('bg_hover');
-        $(this).children('.btn_menu').removeClass('btn_menu_hover');
+        $(this).children('.hover_area').children('.btn_menu').removeClass('btn_menu_hover');
     });
 
     // 星球hover圓形效果
