@@ -485,15 +485,20 @@ span {
 	animation-iteration-count: infinite;
 }
 
+/****************************************
+-----------------點擊提示-----------------
+*****************************************/
+
 .hint {
 	position: absolute;
 	top: 35%;
-	left: 10%;
+	left: -100%;
 	width: 60%;
 	height: 60%;
 	background: url(../img/text_01.svg) center no-repeat;
 	background-size: contain;
 	text-align: center;
+	transition: 3s ease;
 }
 
 .hint p {
@@ -508,6 +513,18 @@ span {
 .hint img {
 	width: 45px;
 	height: 45px;
+}
+
+.hint.hint_animate {
+	left: 10%;
+}
+
+.hint.hint_animate2 {
+	animation-name: island2_animate;
+	animation-direction: alternate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 /*******************************************************************

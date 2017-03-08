@@ -4,6 +4,9 @@ $(document).ready(function() {
     preloader();
     loading_over = false;
 
+    // 載入後雲朵提示框飄移到畫面中
+    $('.hint').addClass('hint_animate').addClass('hint_animate2');
+
     /*--------------------------------------------------
     section1
     首頁動畫效果
