@@ -19,6 +19,8 @@ basic
 
 * {
 	transform: translateZ(0);
+	font-family: "wt011";
+	font-weight: "400";
 }
 
 main {
