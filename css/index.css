@@ -541,6 +541,7 @@ span {
 
 .hint p {
 	color: #734338;
+	opacity: .8;
 	position: absolute;
 	top: 50%;
 	left: 50%;
