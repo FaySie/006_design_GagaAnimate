@@ -5,7 +5,9 @@ $(document).ready(function() {
     loading_over = false;
 
     // 載入後雲朵提示框飄移到畫面中
-    $('.hint').addClass('hint_animate').addClass('hint_animate2');
+    setTimeout(function() {
+        $('.hint').addClass('hint_animate').addClass('hint_animate2');
+    }, 4000);
 
     /*--------------------------------------------------
     section1
@@ -38,6 +40,12 @@ $(document).ready(function() {
             $('.video_box').addClass('video_open');
             $('#video_gaga')[0].play(); //$('#video_gaga')會搜尋所有id形成一個陣列，必須指定陣列[0]才能控制
         }
+    });
+
+    // 點擊跳跳蟲，影片彈出效果
+    $('.jump_btn').click(function() {
+        $('.video_box').addClass('video_open');
+        $('#video_gaga')[0].play(); //$('#video_gaga')會搜尋所有id形成一個陣列，必須指定陣列[0]才能控制
     });
 
     // 按下右上角的關閉，影片掰掰
@@ -168,6 +176,7 @@ $(document).ready(function() {
             "/img/none2.gif",
             "/img/g_key3.png",
             "/img/bg.jpg",
+            "/img/bg2.jpg",
             "/img/bird.png",
             "/img/island1.png",
             "/img/island2.png",
@@ -221,7 +230,10 @@ $(document).ready(function() {
 
         if (imageLoaded >= imageToLoad.length) {
             $('#loading_count').html("100 %");
-            $("#loading_wapper").fadeOut();
+            $('#loading_wapper').fadeOut();
+            $('.slogan_text').addClass('slogan_animate').delay(4000).queue(function() {
+                $('.slogan').fadeOut().dequeue();
+            });
         } else {
             percentage = parseInt(100 * imageLoaded / imageToLoad.length);
             $('#loading_count').html("" + percentage + " %");
