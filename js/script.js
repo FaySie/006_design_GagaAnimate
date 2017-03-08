@@ -13,13 +13,6 @@ $(document).ready(function() {
         $('.circle_cube img').addClass('circle_normal');
     }, 1000);
 
-    // 選單列hover效果
-    $('.hover_a').hover(function() {
-        $(this).children('.hover_area').children('.btn_menu').addClass('btn_menu_hover');
-    }, function() {
-        $(this).children('.hover_area').children('.btn_menu').removeClass('btn_menu_hover');
-    });
-
     // 星球hover圓形效果
     $('.circle_hover a').hover(function() {
         $(this).children('.circle_btn').addClass('open');
@@ -90,7 +83,7 @@ $(document).ready(function() {
 
         // 點擊選單後的active效果
         $('.menubar li').removeClass('active');
-        $(this).children().addClass('active');
+        $(this).parent().addClass('active');
         $('.circle_hover').removeClass('active');
 
         // 星球
@@ -141,7 +134,7 @@ $(document).ready(function() {
     // 點擊星球上的按鈕，改變當前頁數的hover狀態
     $('.circle_outside').click(function() {
         var circle_btn_class = $(this).data('id');
-        $('.section_btn' + circle_btn_class).children().addClass('active');
+        $('.section_btn' + circle_btn_class).parent().addClass('active');
     });
 
     /*--------------------------------------------------

@@ -145,28 +145,33 @@ span {
 	text-align: center;
 }
 
-.hover_area {
-	border-right: 1px dashed #333;
+.hover_a {
+	color: #333;
+	letter-spacing: 1px;
 }
 
-.blog {
-	border-right: 0;
+.hover_area {
+	border-right: 1px dashed #333;
 }
 
 .hover_area div {
 	width: 80%;
 }
 
-.active {
-	color: #333;
+.blog {
+	border-right: 0;
+}
+
+.active .hover_a .btn_menu {
+	color: #FFFDE5;
 	letter-spacing: 1px;
 }
 
-.active:hover {
+.active .hover_a .btn_menu:hover {
 	color: #333;
 }
 
-.active div::after {
+.active .hover_a .btn_menu::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -177,8 +182,6 @@ span {
 }
 
 .btn_menu {
-	color: #333;
-	letter-spacing: 1px;
 	position: absolute;
 	top: 55%;
 	left: 50%;
@@ -190,15 +193,14 @@ span {
 }
 
 /****************************************
------------------js hover----------------
+------------menu hover effect-----------
 *****************************************/
 
-.btn_menu_hover {
+.hover_a:hover {
 	color: #FFFDE5;
-	text-decoration: none;
 }
 
-.btn_menu_hover::after {
+.hover_a .btn_menu::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -206,10 +208,10 @@ span {
 	width: 0%;
 	height: 4px;
 	background-color: #FBB11D;
-	transition: all 0.35s;
+	transition: .35s;
 }
 
-.btn_menu_hover:hover::after {
+.hover_a:hover .btn_menu::after {
 	width: 100%;
 }
 
@@ -485,7 +487,7 @@ span {
 
 .hint {
 	position: absolute;
-	top: 40%;
+	top: 35%;
 	left: 10%;
 	width: 60%;
 	height: 60%;
@@ -495,10 +497,11 @@ span {
 }
 
 .hint p {
+	color: #734338;
 	position: absolute;
-	top: 52%;
-	left: 60%;
-	transform: translate(-70%,-100%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-55%,-50%);
 	width: 100%;
 }
 
