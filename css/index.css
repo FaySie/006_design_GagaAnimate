@@ -80,6 +80,7 @@ span {
 ********************************************************************/
 
 .slogan {
+	display: none;
 	z-index: 16;
     width: 100vw;
     height: 100vh;
@@ -454,7 +455,7 @@ span {
 .island1_img {
 	height: 45%;
 	position: absolute;
-	right: 10%;
+	right: 15%;
 	bottom: 0;
 	animation-name: island1_animate;
 	animation-direction: alternate;
@@ -684,7 +685,7 @@ span {
 .circle_cube img.sec3_1 {
 	height: 250%;
 	transform: rotate(22deg);
-	right: -20%;
+	right: -35%;
 	top: 10%;
 }
 
@@ -694,22 +695,18 @@ span {
 
 .section3_left {
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left: 10%;
 	width: 30%;
 	height: 30%;
-	background: url(../img/text_04.svg) center no-repeat;
-	background-size: contain;
 }
 
 .section3_left article {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	line-height: 2;
 }
 
 .section3_right {
+	display: none;
 	position: absolute;
 	top: 20%;
 	right: -10%;
@@ -747,20 +744,16 @@ span {
 
 .section4_text {
 	z-index: 1;
+	text-align: right;
 	position: absolute;
-    bottom: 10%;
+    top: 42%;
     right: 10%;
     width: 30%;
     height: 30%;
-    background: url(../img/text_04.svg) center no-repeat;
-    background-size: contain;
 }
 
 .section4_text article {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	line-height: 2;
 }
 
 /****************************************
@@ -829,7 +822,7 @@ span {
 .spice_btn_img img {
 	position: absolute;
 	height: 250%;
-	transform: rotate(-68deg);
+	transform: rotate(-64deg);
 	right: -20%;
 	top: 10%;
 }
@@ -907,8 +900,8 @@ span {
 
 .circle_cube img.sec4_1 {
 	height: 250%;
-	transform: rotate(-68deg);
-	right: -20%;
+	transform: rotate(-64deg);
+	right: -7%;
 	top: 10%;
 }
 
@@ -928,21 +921,17 @@ span {
 }
 
 .section5_text {
+	text-align: right;
 	z-index: 1;
 	position: absolute;
-    top: 20%;
+    top: 30%;
     right: 10%;
     width: 30%;
     height: 30%;
-    background: url(../img/text_04.svg) center no-repeat;
-    background-size: contain;
 }
 
 .section5_text article {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	line-height: 2;
 }
 
 .section5_btn_1 div {
@@ -1038,7 +1027,7 @@ span {
 .circle_cube img.sec5_1 {
 	height: 250%;
 	transform: rotate(-150deg);
-	right: -20%;
+	right: -10%;
 	top: 10%;
 }
 
@@ -1059,19 +1048,14 @@ span {
 .section6_text {
 	z-index: 1;
 	position: absolute;
-    top: 20%;
-    right: 10%;
+    top: 35%;
+    left: 10%;
     width: 30%;
     height: 30%;
-    background: url(../img/text_04.svg) center no-repeat;
-    background-size: contain;
 }
 
 .section6_text article {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	line-height: 2;
 }
 
 .section6_btn_1 div {
@@ -1129,9 +1113,9 @@ span {
 
 .circle_cube img.sec6_1 {
 	height: 250%;
-	transform: rotate(-240deg);
-	right: -20%;
-	top: 10%;
+    transform: rotate(-240deg);
+    right: -40%;
+    top: 15%;
 }
 
 /*******************************************************************

@@ -109,6 +109,7 @@ $(document).ready(function() {
 
         // 所有section先隱藏
         $('.section-data').fadeOut();
+        $('.jump_btn').fadeOut();
 
         old_section = section;
 
@@ -134,6 +135,7 @@ $(document).ready(function() {
         // 當點擊的section是第一頁時，顯示星球按鈕，並於3秒後回復星球常態性漂浮動畫
         if (id == 1) {
             $('.home_menu_hover').removeClass('display_none');
+            $('.jump_btn').fadeIn();
 
             circle_normal = setTimeout(function() {
                 $img.addClass('circle_normal');
@@ -230,9 +232,10 @@ $(document).ready(function() {
 
         if (imageLoaded >= imageToLoad.length) {
             $('#loading_count').html("100 %");
-            $('#loading_wapper').fadeOut();
-            $('.slogan_text').addClass('slogan_animate').delay(4000).queue(function() {
-                $('.slogan').fadeOut().dequeue();
+            $('#loading_wapper').fadeOut(function() {
+                $('.slogan_text').addClass('slogan_animate').delay(4000).queue(function() {
+                    $('.slogan').fadeOut().dequeue();
+                });
             });
         } else {
             percentage = parseInt(100 * imageLoaded / imageToLoad.length);
