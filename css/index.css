@@ -728,6 +728,51 @@ span {
 	background-color: rgba(251,177,29,.8);
 	text-decoration: none;
 }
+
+/****************************************
+--------------德瑪汶資訊圖表--------------
+*****************************************/
+
+.section3_text_area {
+	display: none;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url("../img/bg2.jpg") no-repeat;
+	background-size: cover;
+}
+
+.section3_text {
+	width: 70%;
+	height: 65%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.section3_text_area_close {
+	z-index: 10;
+	position: absolute;
+	right: 3%;
+	top: 5%;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	font-size: 2.5rem;
+	background-color: rgba(251,177,29,.8);
+	border: #FBB11D 2px solid;
+	border-radius: 50%;
+}
+
+.section3_text_area_close:hover {
+	background-color: rgba(251,177,29,.6);
+}
+
 /*******************************************************************
 ------------------------------section4------------------------------
 ********************************************************************/

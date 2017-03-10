@@ -71,6 +71,21 @@ $(document).ready(function() {
     });
 
     /*--------------------------------------------------
+    section3
+    關於深耕德瑪汶
+    --------------------------------------------------*/
+
+    $('.section3_readmore').click(function() {
+        $('.section3_text_area').fadeIn();
+        $('.menubar').fadeOut();
+    });
+
+    $('.section3_text_area_close').click(function() {
+        $('.section3_text_area').fadeOut();
+        $('.menubar').fadeIn();
+    });
+
+    /*--------------------------------------------------
     section3~6
     關於深耕德瑪汶、泰雅特色香料、友善農法、醜蔬果宣導的旋轉動畫
     --------------------------------------------------*/
