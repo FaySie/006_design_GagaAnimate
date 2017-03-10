@@ -584,13 +584,8 @@ span {
 }
 
 .section2_text_area {
-	z-index: 1;
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
 	background: url("../img/bg2.jpg") no-repeat;
 	background-size: cover;
 }
@@ -1039,30 +1034,32 @@ span {
 	display: none;
 	width: 100%;
 	height: 100%;
+	z-index: 2;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,0.5);
+	background: url(../img/bg2.jpg) no-repeat;
+	background-size: cover;
 }
 
 .section5_map_close {
 	z-index: 10;
+	font-size: 2.5rem;
 	position: absolute;
 	right: 3%;
 	top: 5%;
 	width: 50px;
 	height: 50px;
 	color: #fff;
-	font-size: 2.5rem;
-	background-color: transparent;
-	border: #fff 2px solid;
+	background-color: rgba(251,177,29,.8);
+	border: #FBB11D 2px solid;
 	border-radius: 50%;
 }
 
 .section5_map_close:hover {
-	background-color: rgba(256,256,256,0.5);
+	background-color: rgba(251,177,29,.6);
 }
 
 /****************************************
@@ -1168,6 +1165,7 @@ span {
 ********************************************************************/
 
 .footer {
+	z-index: 15;
 	width: 100%;
 	text-align: center;
 	position: absolute;
