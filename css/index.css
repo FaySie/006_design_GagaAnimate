@@ -80,7 +80,6 @@ span {
 ********************************************************************/
 
 .slogan {
-	display: none;
 	z-index: 16;
     width: 100vw;
     height: 100vh;
@@ -706,28 +705,41 @@ span {
 }
 
 .section3_right {
-	display: none;
 	position: absolute;
-	top: 20%;
-	right: -10%;
-	width: 60%;
-	height: 60%;
-	background: url(../img/text_05.svg) center no-repeat;
-	background-size: contain;
+    top: 17%;
+    right: -5%;
+    width: 60%;
+    height: 50%;
+    background: url(../img/text_02.svg) center no-repeat;
+    background-size: contain;
 }
 
 .section3_right article {
+	text-align: center;
 	position: absolute;
-	top: 50%;
+	top: 49%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 
-.section3_left p,
-.section3_right p {
+.section3_left p {
 	margin-bottom: 25px;
 }
 
+.section3_right a {
+	color: #333;
+    width: auto;
+    height: auto;
+    background-color: #FBB11D;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.section3_right a:hover {
+	color: #555;
+	background-color: rgba(251,177,29,.8);
+	text-decoration: none;
+}
 /*******************************************************************
 ------------------------------section4------------------------------
 ********************************************************************/
