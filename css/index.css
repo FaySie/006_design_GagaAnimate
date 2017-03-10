@@ -541,7 +541,7 @@ span {
 	transition: 3s ease;
 }
 
-.hint p {
+.hint div {
 	color: #734338;
 	opacity: .8;
 	position: absolute;
@@ -871,21 +871,23 @@ span {
 ---------------刺蔥資訊圖表---------------
 *****************************************/
 
-.info_2 {
+.info_1,
+.info_2,
+.info_3 {
 	display: none;
-	z-index: 1;
-	width: 90%;
-	height: 90%;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	background: url("../img/info_bg.svg") no-repeat center;
-	background-size: contain;
 	text-align: center;
 }
 
-.info_2 div {
+.info_1 div,
+.info_2 div,
+.info_3 div {
 	overflow: auto;
 	width: 100%;
 	height: 100%;
@@ -896,7 +898,9 @@ span {
     transform: translate(0,-50%);
 }
 
-.info_2 img {
+.info_1 img,
+.info_2 img,
+.info_3 img {
 	height: inherit;
 	border-bottom: #30539d 1px solid;
 	margin: 0 auto;
@@ -908,12 +912,14 @@ span {
 	display: none;
 	width: 100%;
 	height: 100%;
+	z-index: 2;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,0.5);
+	background: url(../img/bg2.jpg) no-repeat;
+	background-size: cover;
 }
 
 .info_close {
@@ -925,13 +931,13 @@ span {
 	height: 50px;
 	color: #fff;
 	font-size: 2.5rem;
-	background-color: transparent;
-	border: #fff 2px solid;
+	background-color: rgba(251,177,29,.8);
+	border: #FBB11D 2px solid;
 	border-radius: 50%;
 }
 
 .info_close:hover {
-	background-color: rgba(256,256,256,0.5);
+	background-color: rgba(251,177,29,.6);
 }
 
 /****************************************

@@ -34,11 +34,17 @@ $(document).ready(function() {
         $('.circle_shandow_' + btn_class).removeClass('show');
     });
 
-    // 按下G，影片彈出效果
+    // 影片快捷鍵彈出/關閉效果
     $('body').keydown(function(event){
         if(event.which == 71){
+            // 按下G，影片彈出效果
             $('.video_box').addClass('video_open');
             $('#video_gaga')[0].play(); //$('#video_gaga')會搜尋所有id形成一個陣列，必須指定陣列[0]才能控制
+        } else if(event.which == 27){
+            // 按下ESC關閉影片
+            $('.video_box').removeClass('video_open');
+            $('#video_gaga')[0].pause();
+            $('#video_gaga')[0].currentTime = 0; //按下關閉時，影片回到0秒的地方
         }
     });
 
@@ -46,7 +52,7 @@ $(document).ready(function() {
     $('.jump_btn').click(function() {
         $('.video_box').addClass('video_open');
         $('#video_gaga')[0].play(); //$('#video_gaga')會搜尋所有id形成一個陣列，必須指定陣列[0]才能控制
-    });
+    });    
 
     // 按下右上角的關閉，影片掰掰
     $('.video_close').click(function() {
@@ -278,8 +284,24 @@ $(document).ready(function() {
     });
 
     // 點擊X關閉資訊圖表
+    $('.info_1_close').click(function() {
+        $('.info_1').fadeOut();
+        $('.info_mask').fadeOut();
+        $('.menubar').fadeIn();
+        $('.spice_btn').fadeIn();
+        $('.spice_btn_img').fadeIn();
+    });
+
     $('.info_2_close').click(function() {
         $('.info_2').fadeOut();
+        $('.info_mask').fadeOut();
+        $('.menubar').fadeIn();
+        $('.spice_btn').fadeIn();
+        $('.spice_btn_img').fadeIn();
+    });
+
+    $('.info_3_close').click(function() {
+        $('.info_3').fadeOut();
         $('.info_mask').fadeOut();
         $('.menubar').fadeIn();
         $('.spice_btn').fadeIn();
