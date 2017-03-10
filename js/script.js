@@ -70,11 +70,6 @@ $(document).ready(function() {
         $('.menubar').fadeIn();
     });
 
-    $('.section2_mask').click(function() {
-        $('#section2').fadeOut();
-        $('.menubar').fadeIn();
-    });
-
     /*--------------------------------------------------
     section3~6
     關於深耕德瑪汶、泰雅特色香料、友善農法、醜蔬果宣導的旋轉動畫
