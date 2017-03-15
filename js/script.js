@@ -332,13 +332,6 @@ $(document).ready(function() {
         $('.menubar').fadeIn();
     });
 
-    // 點擊背景遮罩關閉地圖
-    $('.section5_mask').click(function() {
-        $('.section5_btn_img').fadeOut();
-        $(this).fadeOut();
-        $('.menubar').fadeIn();
-    });
-
     /*--------------------------------------------------
     section6
     醜蔬果
