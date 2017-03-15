@@ -47,7 +47,7 @@ span {
 ********************************************************************/
 
 .loading_wapper {
-    z-index: 16;
+    z-index: 17;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -92,7 +92,8 @@ span {
 }
 
 .slogan_text {
-	opacity: 0;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -101,8 +102,8 @@ span {
 	transition: 1.5s ease;
 }
 
-.slogan_animate {
-	opacity: 1;	
+.slogan_text img {
+	height: inherit;
 }
 
 /*******************************************************************

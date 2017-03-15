@@ -4,10 +4,15 @@ $(document).ready(function() {
     preloader();
     loading_over = false;
 
+    //loading完才載入gif圖檔，並於5.3秒後進入首頁
+    $('.slogan_img').attr('src','img/slogan.gif').delay(5300).queue(function() {
+        $('.slogan').fadeOut().dequeue();
+    });
+
     // 載入後雲朵提示框飄移到畫面中
     setTimeout(function() {
         $('.hint').addClass('hint_animate').addClass('hint_animate2');
-    }, 4000);
+    }, 5800);
 
     /*--------------------------------------------------
     section1
@@ -248,11 +253,7 @@ $(document).ready(function() {
 
         if (imageLoaded >= imageToLoad.length) {
             $('#loading_count').html("100 %");
-            $('#loading_wapper').fadeOut(function() {
-                $('.slogan_text').addClass('slogan_animate').delay(4000).queue(function() {
-                    $('.slogan').fadeOut().dequeue();
-                });
-            });
+            $('#loading_wapper').fadeOut();
         } else {
             percentage = parseInt(100 * imageLoaded / imageToLoad.length);
             $('#loading_count').html("" + percentage + " %");
