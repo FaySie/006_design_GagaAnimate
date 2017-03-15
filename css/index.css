@@ -624,6 +624,10 @@ span {
 	display: inline-block;
 }
 
+/****************************************
+--------------什麼是嘎嘎好農--------------
+*****************************************/
+
 .team_photo {
 	width: 65%;
 	height: 60%;
@@ -636,6 +640,7 @@ span {
 
 .team_info {
 	color: #8e6828;
+	width: 100%;
 	height: 40%;
 	/*background-color: yellow;*/
 }
@@ -658,6 +663,28 @@ span {
 	margin: 10px 0;
 }
 
+/****************************************
+-----------------展覽資訊-----------------
+*****************************************/
+
+.ex_info {
+	color: #8e6828;
+}
+
+.timeline {
+	width: 100%;
+}
+
+.timeline_img {
+	position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.timeline_img img {
+	height: inherit;
+}
+
 .date_circle {
 	text-align: center;
 	width: 150px;
@@ -673,10 +700,6 @@ span {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-}
-
-.date_today {
-	background-color: rgba(251,177,29,0.5);
 }
 
 /*******************************************************************
