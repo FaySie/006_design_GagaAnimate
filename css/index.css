@@ -591,12 +591,15 @@ span {
 }
 
 .section2_text {
-	width: 70%;
-	height: 65%;
+	text-align: center;
+	width: 100%;
+	height: 85%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	/*background-color: lightblue;*/
+	overflow-y: scroll;
 }
 
 .section2_text_area_close {
@@ -617,12 +620,42 @@ span {
 	background-color: rgba(251,177,29,.6);
 }
 
-.section2_text article {
-	margin-bottom: 40px;
-}
-
 .section2_text div {
 	display: inline-block;
+}
+
+.team_photo {
+	width: 65%;
+	height: 60%;
+	/*background-color: pink;*/
+}
+
+.team_photo img {
+	height: 100%;
+}
+
+.team_info {
+	color: #8e6828;
+	height: 40%;
+	/*background-color: yellow;*/
+}
+
+.team_info_middle {
+	position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.team_info h4:last-child {
+	line-height: 1.5;
+	color: #000;
+}
+
+.team_line {
+	width: 100px;
+	height: 4px;
+	border: 4px dotted #FBB11D;
+	margin: 10px 0;
 }
 
 .date_circle {
