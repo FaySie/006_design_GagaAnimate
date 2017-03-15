@@ -74,11 +74,13 @@ $(document).ready(function() {
     $('.section2_btn').click(function() {
         $('#section2').fadeIn();
         $('.menubar').fadeOut();
+        $('.jump_btn').fadeOut();
     });
 
     $('.section2_text_area_close').click(function() {
         $('#section2').fadeOut();
         $('.menubar').fadeIn();
+        $('.jump_btn').fadeIn();
     });
 
     /*--------------------------------------------------
