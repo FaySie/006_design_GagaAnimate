@@ -377,7 +377,7 @@ span {
 	top: 30%;
 	left: 30%;
 	transform: scale(0);
-	background: url(../img/circle.svg) center;
+	background: url(../img/circle_btn.svg) center;
 	background-size: cover;
 	text-align: center;
 	transition: transform .5s ease;
@@ -543,12 +543,11 @@ span {
 }
 
 .hint div {
-	color: #734338;
-	opacity: .8;
+	color: #9e827e;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-55%,-50%);
+	transform: translate(-55%,-45%);
 	width: 100%;
 }
 
