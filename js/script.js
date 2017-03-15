@@ -131,6 +131,7 @@ $(document).ready(function() {
         // 所有section先隱藏
         $('.section-data').fadeOut();
         $('.jump_btn').fadeOut();
+        $('.contact').fadeOut();
 
         old_section = section;
 
@@ -157,6 +158,7 @@ $(document).ready(function() {
         if (id == 1) {
             $('.home_menu_hover').removeClass('display_none');
             $('.jump_btn').fadeIn();
+            $('.contact').fadeIn();
 
             circle_normal = setTimeout(function() {
                 $img.addClass('circle_normal');
