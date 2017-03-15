@@ -346,4 +346,15 @@ $(document).ready(function() {
         $(this).children('div').removeClass('bank_img_hover');
         $(this).children('div').children('p').removeClass('bank_text_hover');
     });
+
+    /*--------------------------------------------------
+    contact
+    聯絡我們
+    --------------------------------------------------*/
+
+    $('.contact_btn_hover').hover(function() {
+        $(this).children('img').addClass('contact_btn_img');
+    }, function() {
+        $(this).children('img').removeClass('contact_btn_img');
+    });
 });
