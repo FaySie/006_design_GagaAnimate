@@ -319,16 +319,17 @@ $(document).ready(function() {
     --------------------------------------------------*/
     
     // 點擊地圖觀看大圖
-    $('.section5_btn_1').click(function() {
-        $('.section5_btn_img').fadeIn();
-        $('.section5_mask').fadeIn();
+    $('.sec5_btn').click(function() {
+        farming_btn_class = $(this).data('sec5');
+        $('.sec5_btn_img_' + farming_btn_class).fadeIn();
+        $('.sec5_mask').fadeIn();
         $('.menubar').fadeOut();
     });
 
     // 點擊X時關閉地圖
-    $('.section5_map_close').click(function() {
-        $('.section5_btn_img').fadeOut();
-        $('.section5_mask').fadeOut();
+    $('.sec5_close').click(function() {
+        $('.sec5_btn_img').fadeOut();
+        $('.sec5_mask').fadeOut();
         $('.menubar').fadeIn();
     });
 
