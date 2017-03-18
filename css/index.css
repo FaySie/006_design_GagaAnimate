@@ -669,6 +669,7 @@ span {
 *****************************************/
 
 .ex_info {
+	width: 100%;
 	color: #8e6828;
 }
 
@@ -677,6 +678,7 @@ span {
 }
 
 .timeline_img {
+	width: 100%;
 	position: absolute;
     left: 0;
     z-index: -1;
@@ -686,21 +688,60 @@ span {
 	height: inherit;
 }
 
-.date_circle {
-	text-align: center;
-	width: 150px;
-	height: 150px;
-	border: 3px #FBB11D solid;
-	border-radius: 50%;
-	margin-right: 10px;
+/****************************************
+-----------------展覽資訊-----------------
+*****************************************/
+
+.thx_info {
+	width: 100%;
+	color: #8e6828;
 }
 
-.date_circle div {
+.thx_text {
+	line-height: 1.5;
+	color: #000;
+}
+
+.thx_area {
+	width: 50%;
+	margin-top: 10px;
+}
+
+.thx_area span {
+    display: inline-block;
+    background-color: #ddd;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 0 5px 10px;
+}
+
+.thx_title {
 	width: 100%;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	color: #000;
+}
+
+.thx_nutc {
+	background-color: #FBB11D;
+}
+
+.thx_name {
+	margin-top: 20px;
+}
+
+.thx_daanriver {
+	background-color: #E77876;
+}
+
+.thx_mountain {
+	background-color: #B0DEDB;
+}
+
+.thx_other {
+	background-color: #BFC23D;
+}
+
+.thx_height {
+	height: 35%;
 }
 
 /*******************************************************************
