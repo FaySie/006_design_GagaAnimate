@@ -531,6 +531,7 @@ span {
 *****************************************/
 
 .hint {
+	opacity: .9;
 	position: absolute;
 	top: 35%;
 	left: -100%;
@@ -543,7 +544,7 @@ span {
 }
 
 .hint div {
-	color: #9e827e;
+	color: #89726f;
 	position: absolute;
 	top: 50%;
 	left: 50%;
