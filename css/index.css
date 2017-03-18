@@ -377,7 +377,7 @@ span {
 	top: 30%;
 	left: 30%;
 	transform: scale(0);
-	background: url(../img/circle_btn.svg) center;
+	background: url(../img/section1/circle_btn.svg) center;
 	background-size: cover;
 	text-align: center;
 	transition: transform .5s ease;
@@ -537,7 +537,7 @@ span {
 	left: -100%;
 	width: 60%;
 	height: 60%;
-	background: url(../img/text_01.svg) center no-repeat;
+	background: url(../img/section1/text_01.svg) center no-repeat;
 	background-size: contain;
 	text-align: center;
 	transition: 3s ease;
@@ -791,7 +791,7 @@ span {
     right: -8%;
     width: 60%;
     height: 40%;
-    background: url(../img/text_02.svg) center no-repeat;
+    background: url(../img/section3/text_02.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -1107,12 +1107,12 @@ span {
 	top: 35%;
 	width: 30%;
 	height: 50%;
-	background: url("../img/daanriver_btn01.png") no-repeat;
+	background: url("../img/section5/daanriver_btn01.png") no-repeat;
 	background-size: contain;
 }
 
 .sec5_btn_1 div:hover {
-	background: url("../img/daanriver_btn02.png") no-repeat;
+	background: url("../img/section5/daanriver_btn02.png") no-repeat;
 	background-size: contain;
 }
 
@@ -1120,7 +1120,7 @@ span {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	background: url("../img/daanriver_map.png") no-repeat center;
+	background: url("../img/section5/daanriver_map.png") no-repeat center;
 	background-size: contain;
 	position: relative;
 	z-index: 200;
@@ -1136,12 +1136,12 @@ span {
     top: 55%;
     width: 20%;
     height: 35%;
-    background: url(../img/farming_btn03.png) no-repeat;
+    background: url(../img/section5/farming_btn03.png) no-repeat;
     background-size: contain;
 }
 
 .sec5_btn_2 div:hover {
-	background: url(../img/farming_btn04.png) no-repeat;
+	background: url(../img/section5/farming_btn04.png) no-repeat;
     background-size: contain;
 }
 
@@ -1155,12 +1155,12 @@ span {
     top: 55%;
     width: 15%;
     height: 35%;
-    background: url(../img/farming_btn01.png) no-repeat;
+    background: url(../img/section5/farming_btn01.png) no-repeat;
     background-size: contain;
 }
 
 .sec5_btn_3 div:hover {
-	background: url(../img/farming_btn02.png) no-repeat;
+	background: url(../img/section5/farming_btn02.png) no-repeat;
     background-size: contain;
 }
 
@@ -1264,12 +1264,12 @@ span {
     top: 63%;
     width: 12%;
     height: 35%;
-    background: url(../img/fruit_btn01.png) no-repeat;
+    background: url(../img/section6/fruit_btn01.png) no-repeat;
     background-size: contain;
 }
 
 .section6_btn_1 div:hover {
-	background: url(../img/fruit_btn02.png) no-repeat;
+	background: url(../img/section6/fruit_btn02.png) no-repeat;
     background-size: contain;
 }
 
@@ -1283,12 +1283,12 @@ span {
     top: 57%;
     width: 12%;
     height: 35%;
-    background: url(../img/bank01.png) no-repeat;
+    background: url(../img/section6/bank01.png) no-repeat;
     background-size: contain;
 }
 
 .section6_btn_2 div.bank_img_hover {
-	background: url(../img/bank02.png) no-repeat;
+	background: url(../img/section6/bank02.png) no-repeat;
     background-size: contain;
 }
 
