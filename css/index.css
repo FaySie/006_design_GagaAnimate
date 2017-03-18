@@ -978,9 +978,9 @@ span {
 ---------------香料資訊圖表---------------
 *****************************************/
 
-.info_1,
-.info_2,
-.info_3 {
+.sec4_info_1,
+.sec4_info_2,
+.sec4_info_3 {
 	display: none;
 	z-index: 3;
 	width: 100%;
@@ -992,9 +992,9 @@ span {
 	text-align: center;
 }
 
-.info_1 div,
-.info_2 div,
-.info_3 div {
+.sec4_info_1 div,
+.sec4_info_2 div,
+.sec4_info_3 div {
 	overflow: auto;
 	width: 100%;
 	height: 100%;
@@ -1005,9 +1005,9 @@ span {
     transform: translate(0,-50%);
 }
 
-.info_1 img,
-.info_2 img,
-.info_3 img {
+.sec4_info_1 img,
+.sec4_info_2 img,
+.sec4_info_3 img {
 	height: inherit;
 	border-bottom: #30539d 1px solid;
 	margin: 0 auto;
@@ -1015,7 +1015,7 @@ span {
 	padding-bottom: 2.5%;
 }
 
-.info_mask {
+.sec4_mask {
 	display: none;
 	width: 100%;
 	height: 100%;
@@ -1033,7 +1033,7 @@ span {
 -------------資訊圖表關閉按鈕--------------
 *****************************************/
 
-.info_close {
+.sec4_close {
 	z-index: 10;
 	position: absolute;
 	right: 3%;
@@ -1047,7 +1047,7 @@ span {
 	border-radius: 50%;
 }
 
-.info_close:hover {
+.sec4_close:hover {
 	background-color: rgba(251,177,29,.6);
 }
 

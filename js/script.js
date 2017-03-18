@@ -280,34 +280,18 @@ $(document).ready(function() {
     
     // 點擊香料樹開啟資訊圖表
     $('.spice_btn').click(function() {
-        spice_btn_class = $(this).data('btn');
-        $('.info_' + spice_btn_class).fadeIn();
-        $('.info_mask').fadeIn();
+        spice_btn_class = $(this).data('sec4');
+        $('.sec4_info_' + spice_btn_class).fadeIn();
+        $('.sec4_mask').fadeIn();
         $('.menubar').fadeOut();
         $('.spice_btn').fadeOut();
         $('.spice_btn_img').fadeOut();
     });
 
     // 點擊X關閉資訊圖表
-    $('.info_1_close').click(function() {
-        $('.info_1').fadeOut();
-        $('.info_mask').fadeOut();
-        $('.menubar').fadeIn();
-        $('.spice_btn').fadeIn();
-        $('.spice_btn_img').fadeIn();
-    });
-
-    $('.info_2_close').click(function() {
-        $('.info_2').fadeOut();
-        $('.info_mask').fadeOut();
-        $('.menubar').fadeIn();
-        $('.spice_btn').fadeIn();
-        $('.spice_btn_img').fadeIn();
-    });
-
-    $('.info_3_close').click(function() {
-        $('.info_3').fadeOut();
-        $('.info_mask').fadeOut();
+    $('.sec4_close').click(function() {
+        $('.sec4_info').fadeOut();
+        $('.sec4_mask').fadeOut();
         $('.menubar').fadeIn();
         $('.spice_btn').fadeIn();
         $('.spice_btn_img').fadeIn();
