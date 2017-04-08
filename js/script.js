@@ -134,6 +134,7 @@ $(document).ready(function() {
         $('.section-data').fadeOut();
         $('.jump_btn').fadeOut();
         $('.contact').fadeOut();
+        $('.circle_tag').fadeOut();
 
         old_section = section;
 
@@ -151,6 +152,10 @@ $(document).ready(function() {
         // 經過2.5秒後，該頁物件才fadeIn進來
         setTimeout(function() {
             $('#section' + id).fadeIn();
+            // 當id>2時，載入section編號相同的按鈕標籤
+            if (id > 2) {
+                $('.circle_tag_sec' + id).fadeIn();
+            }
         }, 2500);
 
         // 指定當前section為id
@@ -161,6 +166,7 @@ $(document).ready(function() {
             $('.home_menu_hover').removeClass('display_none');
             $('.jump_btn').fadeIn();
             $('.contact').fadeIn();
+            $('.circle_tag').fadeOut();
 
             circle_normal = setTimeout(function() {
                 $img.addClass('circle_normal');
@@ -271,10 +277,10 @@ $(document).ready(function() {
 
     // 3顆香料樹的hover立體效果
     $('.spice_btn').hover(function() {
-        spice_btn_class = $(this).data('btn');
+        spice_btn_class = $(this).data('sec4');
         $('.spice_btn_img_' + spice_btn_class).addClass('show');
     }, function() {
-        spice_btn_class = $(this).data('btn');
+        spice_btn_class = $(this).data('sec4');
         $('.spice_btn_img_' + spice_btn_class).removeClass('show');
     });
     
@@ -302,6 +308,15 @@ $(document).ready(function() {
     友善農法
     --------------------------------------------------*/
     
+    // 3個物件的hover立體效果
+    $('.sec5_btn').hover(function() {
+        farming_btn_class = $(this).data('sec5');
+        $('.farming_btn_img_' + farming_btn_class).addClass('show');
+    }, function() {
+        farming_btn_class = $(this).data('sec5');
+        $('.farming_btn_img_' + farming_btn_class).removeClass('show');
+    });
+
     // 點擊地圖觀看大圖
     $('.sec5_btn').click(function() {
         farming_btn_class = $(this).data('sec5');
@@ -321,12 +336,27 @@ $(document).ready(function() {
     section6
     醜蔬果
     --------------------------------------------------*/
-    $('.section6_btn_2').hover(function() {
-        $(this).children('div').addClass('bank_img_hover');
-        $(this).children('div').children('p').addClass('bank_text_hover');
+    // 3個物件的hover立體效果
+    $('.sec6_btn').hover(function() {
+        fruit_btn_class = $(this).data('sec6');
+        $('.fruit_btn_img_' + fruit_btn_class).addClass('show');
     }, function() {
-        $(this).children('div').removeClass('bank_img_hover');
-        $(this).children('div').children('p').removeClass('bank_text_hover');
+        fruit_btn_class = $(this).data('sec6');
+        $('.fruit_btn_img_' + fruit_btn_class).removeClass('show');
+    });
+
+    // 點擊醜蔬果觀看資訊圖表
+    $('.sec6_btn_1').click(function() {
+        $('.sec6_btn_img').fadeIn();
+        $('.sec6_mask').fadeIn();
+        $('.menubar').fadeOut();
+    });
+
+    // 點擊X時關閉地圖
+    $('.sec6_close').click(function() {
+        $('.sec6_btn_img').fadeOut();
+        $('.sec6_mask').fadeOut();
+        $('.menubar').fadeIn();
     });
 
     /*--------------------------------------------------
