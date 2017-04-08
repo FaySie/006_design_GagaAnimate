@@ -396,6 +396,22 @@ span {
 }
 
 /****************************************
+----------星球上會動的物體&標籤按鈕----------
+*****************************************/
+
+.circle_people,
+.circle_tag {
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.circle_tag {
+	display: none;
+}
+
+/****************************************
 -----------------鳥的物件-----------------
 *****************************************/
 
@@ -453,9 +469,10 @@ span {
 }
 
 .island1_img {
-	height: 45%;
+	opacity: .6;
+	height: 40%;
 	position: absolute;
-	right: 15%;
+	left: 50%;
 	bottom: 0;
 	animation-name: island1_animate;
 	animation-direction: alternate;
@@ -470,6 +487,7 @@ span {
 }
 
 .island2 img {
+	opacity: .9;
 	height: 75%;
 	position: absolute;
 	top: 10%;
@@ -548,7 +566,7 @@ span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-55%,-45%);
+	transform: translate(-55%,-25%);
 	width: 100%;
 }
 
@@ -855,7 +873,7 @@ span {
 .circle_cube img.sec3_1 {
 	height: 250%;
 	transform: rotate(22deg);
-	right: -35%;
+	right: -37%;
 	top: 10%;
 }
 
@@ -941,6 +959,7 @@ span {
 }
 
 .section3_text img {
+	opacity: .9;
 	height: inherit;
 	border-bottom: #30539d 1px solid;
 	padding-top: 2.5%;
@@ -1004,24 +1023,23 @@ span {
 
 .spice_btn {
 	width: 21vw;
-	height: 21vw;
+	height: 31vw;
 	position: absolute;
-	border-radius: 50%;
 }
 
 .spice_btn_1 {
 	top: 21vh;
-	left: 18%;
+	left: 8%;
 }
 
 .spice_btn_2 {
-	top: 10vh;
-	left: 38%;
+	top: 13vh;
+    left: 29%;
 }
 
 .spice_btn_3 {
-	top: 10vh;
-	left: 59%;
+	top: 18vh;
+    left: 50%;
 }
 
 .spice_btn:hover {
@@ -1060,7 +1078,7 @@ span {
 	position: absolute;
 	height: 250%;
 	transform: rotate(-64deg);
-	right: -20%;
+	right: -7%;
 	top: 10%;
 }
 
@@ -1188,22 +1206,41 @@ span {
 }
 
 /****************************************
+--------------三個物件立體效果--------------
+*****************************************/
+
+.farming_btn_img {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.farming_btn_img.show {
+	opacity: 1;
+}
+
+.farming_btn_img img {
+	position: absolute;
+	height: 250%;
+	transform: rotate(-150deg);
+	right: -6%;
+	top: 10%;
+}
+
+/****************************************
 -----------------友善地圖-----------------
 *****************************************/
 
 .sec5_btn_1 div {
 	position: absolute;
-	left: 14%;
-	top: 35%;
-	width: 30%;
-	height: 50%;
-	background: url("../img/section5/daanriver_btn01.png") no-repeat;
-	background-size: contain;
-}
-
-.sec5_btn_1 div:hover {
-	background: url("../img/section5/daanriver_btn02.png") no-repeat;
-	background-size: contain;
+    left: 12%;
+    top: 34%;
+    width: 18%;
+    height: 35%;
 }
 
 .sec5_btn_img_1 {
@@ -1222,17 +1259,10 @@ span {
 
 .sec5_btn_2 div {
     position: absolute;
-    left: 42%;
+    left: 32%;
     top: 55%;
-    width: 20%;
-    height: 35%;
-    background: url(../img/section5/farming_btn03.png) no-repeat;
-    background-size: contain;
-}
-
-.sec5_btn_2 div:hover {
-	background: url(../img/section5/farming_btn04.png) no-repeat;
-    background-size: contain;
+    width: 15%;
+    height: 29%;
 }
 
 /****************************************
@@ -1240,18 +1270,11 @@ span {
 *****************************************/
 
 .sec5_btn_3 div {
-    position: absolute;
-    right: 20%;
-    top: 55%;
-    width: 15%;
-    height: 35%;
-    background: url(../img/section5/farming_btn01.png) no-repeat;
-    background-size: contain;
-}
-
-.sec5_btn_3 div:hover {
-	background: url(../img/section5/farming_btn02.png) no-repeat;
-    background-size: contain;
+	position: absolute;
+    right: 35%;
+    top: 49%;
+    width: 14%;
+    height: 23%;
 }
 
 .sec5_btn_img div {
@@ -1317,7 +1340,7 @@ span {
 .circle_cube img.sec5_1 {
 	height: 250%;
 	transform: rotate(-150deg);
-	right: -10%;
+	right: -6%;
 	top: 10%;
 }
 
@@ -1348,53 +1371,52 @@ span {
 	line-height: 2;
 }
 
-.section6_btn_1 div {
+.sec6_btn_1 div {
     position: absolute;
-    left: 10%;
+    left: 36%;
     top: 63%;
-    width: 12%;
-    height: 35%;
-    background: url(../img/section6/fruit_btn01.png) no-repeat;
-    background-size: contain;
+    width: 13%;
+    height: 21%;
 }
 
-.section6_btn_1 div:hover {
-	background: url(../img/section6/fruit_btn02.png) no-repeat;
-    background-size: contain;
 }
 
 /****************************************
 -----------------食物銀行-----------------
 *****************************************/
 
-.section6_btn_2 div {
+.sec6_btn_2 div {
     position: absolute;
-    right: 25%;
-    top: 57%;
-    width: 12%;
+    right: 5%;
+    top: 61%;
+    width: 17%;
     height: 35%;
-    background: url(../img/section6/bank01.png) no-repeat;
-    background-size: contain;
 }
 
-.section6_btn_2 div.bank_img_hover {
-	background: url(../img/section6/bank02.png) no-repeat;
-    background-size: contain;
+/****************************************
+--------------三個物件立體效果--------------
+*****************************************/
+
+.fruit_btn_img {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
 }
 
-.section6_btn_2 p {
-	display: inline;
-    padding: 10px;
-    color: #333;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 3px;
-    position: relative;
-    left: 100%;
-    top: 45%;
+.fruit_btn_img.show {
+	opacity: 1;
 }
 
-.section6_btn_2 p.bank_text_hover {
-	background-color: #fff;
+.fruit_btn_img img {
+	position: absolute;
+	height: 250%;
+    transform: rotate(-240deg);
+    right: -40%;
+    top: 15%;
 }
 
 /****************************************
