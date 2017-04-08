@@ -609,9 +609,15 @@
 	    script
 		***************************************************** -->
 	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	    <!-- <script src="js/preload.js"></script> -->
+	    <script src="js/isMobile.js"></script>
 	    <script src="js/script.js"></script>
 	    <script src="js/bootstrap.js"></script>
+	    <script type="text/javascript">
+        if (isMobile.phone || isMobile.tablet) {
+			window.location.replace('mobile.html');
+        }
+        	smoothScroll.init();
+    	</script>
 
 	    <!-- justfont字體導入 -->
 	    <script type="text/javascript">
