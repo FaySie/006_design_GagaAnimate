@@ -78,6 +78,10 @@ $(document).ready(function() {
     });
 
     $('.section2_text_area_close').click(function() {
+        // 將頁面強制回到頂端
+        setTimeout(function() {
+            $('.section2_text').scrollTop(0);            
+        }, 400);
         $('#section2').fadeOut();
         $('.menubar').fadeIn();
         $('.jump_btn').fadeIn();
@@ -94,6 +98,10 @@ $(document).ready(function() {
     });
 
     $('.section3_text_area_close').click(function() {
+        // 將頁面強制回到頂端
+        setTimeout(function() {
+            $('.section3_text').scrollTop(0);            
+        }, 400);
         $('.section3_text_area').fadeOut();
         $('.menubar').fadeIn();
     });
@@ -296,6 +304,10 @@ $(document).ready(function() {
 
     // 點擊X關閉資訊圖表
     $('.sec4_close').click(function() {
+        // 將頁面強制回到頂端
+        setTimeout(function() {
+            $('.sec4_info div').scrollTop(0);            
+        }, 400);
         $('.sec4_info').fadeOut();
         $('.sec4_mask').fadeOut();
         $('.menubar').fadeIn();
@@ -327,6 +339,10 @@ $(document).ready(function() {
 
     // 點擊X時關閉地圖
     $('.sec5_close').click(function() {
+        // 將頁面強制回到頂端
+        setTimeout(function() {
+            $('.sec5_btn_img div').scrollTop(0);            
+        }, 400);
         $('.sec5_btn_img').fadeOut();
         $('.sec5_mask').fadeOut();
         $('.menubar').fadeIn();
@@ -354,6 +370,10 @@ $(document).ready(function() {
 
     // 點擊X時關閉地圖
     $('.sec6_close').click(function() {
+        // 將頁面強制回到頂端
+        setTimeout(function() {
+            $('.sec6_btn_img div').scrollTop(0);            
+        }, 400);
         $('.sec6_btn_img').fadeOut();
         $('.sec6_mask').fadeOut();
         $('.menubar').fadeIn();
