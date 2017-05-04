@@ -1,0 +1,203 @@
+/**************************************************
+*
+*   web color
+*
+*   white       : #fff
+*   lightyellow : #FFFDE5
+*   orange		: #FBB11D
+*   green		: #BFC23D
+*   red			: #E77876
+*	brown		: #B8A880
+*   dark brown  : #8e6828
+*   blue		: #B0DEDB
+*   dark gray   : #333
+*
+**************************************************/
+
+/*
+basic
+*/
+
+* {
+	font-family: "wt011";
+	font-weight: "400";
+}
+
+body {
+	background: lightblue url(../img/bg.jpg);
+}
+
+#main {
+	height: 100%;
+	padding: 0;
+}
+
+body h4 {
+	font-size: 48px;
+}
+
+body h5 {
+	font-size: 42px;
+}
+
+body h6 {
+	font-size: 36px;
+}
+
+/*******************************************************************
+-------------------------------施工中-------------------------------
+********************************************************************/
+
+.bug {
+	text-align: center;
+	width: 100vw;
+	height: 100vw;
+}
+
+.bug img {
+	width: 50%;
+}
+
+/*******************************************************************
+-------------------------------navbar-------------------------------
+********************************************************************/
+
+.menubar {
+	z-index: 1;
+	width: 100%;
+	height: 6%;
+	margin-top: 8%;
+	margin-left: 7%;
+	position: fixed;
+	left: 0;
+}
+
+.logo,
+.menu {
+	display: inline-block;
+	width: 42vw;
+}
+
+.menu {
+	text-align: right;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+.menu img {
+	height: 40%;
+	position: relative;
+	right: -87%;
+}
+
+/*******************************************************************
+------------------------------section1------------------------------
+********************************************************************/
+
+#section1 {
+	width: 100%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+}
+
+#section1 div {
+	width: 100%;
+	height: 100%;
+	background: url(../img/mobile/circle_m.png) center no-repeat;
+	background-size: contain;
+	animation-name: circle;
+	animation-direction: alternate;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/*******************************************************************
+------------------------------menu_area-----------------------------
+********************************************************************/
+
+#menu_area {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 50%;
+	height: auto;
+	background-color: #eee;
+}
+
+#menu_area h6 {
+	color: #b48563;
+}
+
+#menu_area ul {
+	padding-top: 15.5vh;
+	padding-left: 17%;
+	list-style-type: none;
+}
+
+#menu_area li {
+	margin-bottom: 2.6vh;
+}
+
+.link {
+	margin-top: 10vh;
+}
+
+.link_btn {
+	margin-left: 16%;
+	padding-bottom: 6vh;
+}
+
+.link_btn img {
+	display: inline-block;
+	width: 25%;
+	margin-right: 7.5px;
+}
+
+/*******************************************************************
+-------------------------------footer-------------------------------
+********************************************************************/
+
+.footer {
+	color: #666;
+	text-align: center;
+	width: 100%;
+	height: 6%;
+	position: absolute;
+	bottom: 4.5%;
+}
+
+/*******************************************************************
+-------------------------------animate------------------------------
+********************************************************************/
+
+@keyframes circle {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(5%);
+	}
+}
+
+@keyframes menu {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 50%;
+	}
+}
+
+#menu_area.menu_animate {
+	display: block;
+	left: 50%;
+	animation-name: menu;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+}
+
+
