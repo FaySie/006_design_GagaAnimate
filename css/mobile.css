@@ -28,8 +28,17 @@ body {
 }
 
 .main {
-	height: 100%;
+	height: 105%;
 	padding: 0;
+}
+
+.main2 {
+	padding: 0 30px;
+	background: #fff url(../img/bg2.jpg);
+}
+
+body h3 {
+	font-size: 52px;
 }
 
 body h4 {
@@ -40,7 +49,8 @@ body h5 {
 	font-size: 42px;
 }
 
-body h6 {
+body h6,
+span {
 	font-size: 36px;
 }
 
@@ -186,9 +196,18 @@ body h6 {
 	bottom: 4.5%;
 }
 
-/*******************************************************************
--------------------------------animate------------------------------
-********************************************************************/
+.footer2 {
+	color: #666;
+	text-align: center;
+	width: 100%;
+	height: 6%;
+	margin-top: 4vh;
+	padding-bottom: 9vh;
+}
+
+/****************************************
+------------------animate----------------
+*****************************************/
 
 @keyframes circle {
 	from {
@@ -216,4 +235,177 @@ body h6 {
 	animation-timing-function: linear;
 }
 
+/*******************************************************************
+------------------------------section2------------------------------
+********************************************************************/
 
+#section2 {
+	padding-top: 13.5vh;
+	text-align: center;
+}
+
+/****************************************
+----------what's the gaga farming--------
+*****************************************/
+
+.sec2_pic1 {
+	width: 100%;
+	height: 37%;
+	background: url(../img/section2/team_photo.png) no-repeat;
+	background-size: contain;
+}
+
+.team_info {
+	width: 100%;
+	color: #8e6828;
+}
+
+.team_info_middle {
+	width: 68%;
+	padding-top: 3vh;
+	margin: 0 auto;
+}
+
+.team_line {
+	width: 100px;
+	height: 4px;
+	border: 4px dotted #FBB11D;
+	margin: 0 auto;
+}
+
+.team_info h6 {
+	margin-bottom: 3vh;
+}
+
+.team_info h5 {
+	margin-top: 3vh;
+	text-align: left;
+	line-height: 1.5;
+	color: #000;
+}
+
+/****************************************
+---------------team members-------------
+*****************************************/
+
+.member_info {
+	color: #8e6828;
+	padding-top: 3vh;
+}
+
+.member_info h6 {
+	margin-bottom: 3vh;
+}
+
+.member h6 {
+	margin-bottom: 0;
+}
+
+.member h5 {
+	color: #000;
+}
+
+.member {
+	width: 100%;
+	height: 100%;
+}
+
+.member1_img,
+.member2_img,
+.member3_img,
+.member4_img {
+	width: 100%;
+	height: 37%;
+}
+
+.member1_img {
+	background: url(../img/section2/member1-1.png) no-repeat;
+}
+
+.member2_img {
+	background: url(../img/section2/member2-1.png) no-repeat;
+}
+
+.member3_img {
+	background: url(../img/section2/member3-1.png) no-repeat;
+}
+
+.member4_img {
+	background: url(../img/section2/member4-1.png) no-repeat;
+}
+
+/****************************************
+----------------exhibition--------------
+*****************************************/
+
+.ex_info {
+	color: #8e6828;
+}
+
+.ex_info h6 {
+	margin-bottom: 3vh;
+}
+
+.timeline {
+	margin-top: 3vh;	
+}
+
+.timeline img {
+	width: 52%;
+}
+
+/****************************************
+-------------------thanks----------------
+*****************************************/
+
+.thx_info {
+	color: #8e6828;
+	padding-top: 3vh;
+}
+
+.thx_info h6 {
+	margin-bottom: 3vh;
+}
+
+.thx_text {
+	width: 69%;
+	color: #000;
+	line-height: 1.5;
+	padding-top: 3vh;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.thx_area {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.thx_title {
+	color: #000;
+	margin: 3vh 0;
+	padding: 6px 0;
+}
+
+.thx_nutc {
+	background-color: #fbb11d;
+}
+
+.thx_mountain {
+	background-color: #b0dedb;
+}
+
+.thx_daanriver {
+	background-color: #e77876;
+}
+
+.thx_other {
+	background-color: #bfc23d;
+}
+
+.thx_name span {
+	display: inline-block;
+	background-color: #ddd;
+	padding: 10px 15px;
+	margin: 0 7px 20px;
+}
