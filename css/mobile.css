@@ -402,3 +402,77 @@ span {
 	padding: 10px 15px;
 	margin: 0 7px 20px;
 }
+
+/*******************************************************************
+------------------------------section3------------------------------
+********************************************************************/
+
+#section3 {
+	width: 100%;
+    position: relative;
+    top: 10vh;
+}
+
+.sec3_readmore {
+	width: 33vw;
+	height: 33vw;
+	background: url(../img/mobile/text.svg) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 2%;
+	right: 10%;
+}
+
+.sec3_cover {
+	width: 100%;
+	height: 59%;
+	background: url(../img/mobile/circle_m_daanriver.png) top no-repeat;
+}
+
+.sec3_bg {
+	display: inline-block;
+	width: 100%;
+	background: linear-gradient(#ccaf83,#fefce7);
+	position: relative;
+}
+
+.sec3_text {
+	width: 100%;
+	padding: 0 12vw 0;
+}
+
+#section3 h4 {
+	font-size: 46px;
+	font-family: PingFangTC;
+	font-weight: bold;
+	margin-bottom: 4vh;
+}
+
+#section3 h5 {
+	line-height: 1.5;
+}
+
+.sec3_info,
+.sec3_1 img,
+.sec3_3 img {
+	width: 100%;
+}
+
+.sec3_2 {
+	width: 100%;
+	height: 65%;
+	overflow: scroll;
+}
+
+.sec3_2 img {
+	height: 100%;
+}
+
+@media (min-device-width: 768px) {
+	.sec3_cover {
+		width: 100%;
+		height: 77%;
+		background: url(../img/mobile/circle_m_daanriver.png) top no-repeat;
+	}
+}
+
