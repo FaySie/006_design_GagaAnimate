@@ -18,4 +18,9 @@ $(document).ready(function() {
 		sec5_class = $(this).data('sec5');
 		$(".sec5_" + sec5_class).slideToggle("slow");
 	});
+
+	$(".sec6_info_title").click(function() {
+		sec6_class = $(this).data('sec6');
+		$(".sec6_" + sec6_class).slideToggle("slow");
+	});
 });

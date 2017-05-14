@@ -413,7 +413,8 @@ span {
 
 #section3,
 #section4,
-#section5 {
+#section5,
+#section6 {
 	width: 100%;
     position: relative;
     top: 10vh;
@@ -421,7 +422,8 @@ span {
 
 .sec3_cover,
 .sec4_cover,
-.sec5_cover {
+.sec5_cover,
+.sec6_cover {
 	width: 100%;
 	height: 59%;
 	background: url(../img/mobile/circle_m_daanriver.png) top no-repeat;
@@ -429,7 +431,8 @@ span {
 
 .sec3_bg,
 .sec4_bg,
-.sec5_bg {
+.sec5_bg,
+.sec6_bg {
 	display: inline-block;
 	width: 100%;
 	background: linear-gradient(#ccaf83,#fefce7);
@@ -438,14 +441,16 @@ span {
 
 .sec3_text,
 .sec4_text,
-.sec5_text {
+.sec5_text,
+.sec6_text {
 	width: 100%;
 	padding: 0 12vw 0;
 }
 
 #section3 h4,
 #section4 h4,
-#section5 h4 {
+#section5 h4,
+#section6 h4 {
 	font-size: 46px;
 	font-family: PingFangTC;
 	font-weight: bold;
@@ -453,13 +458,15 @@ span {
 }
 
 #section4 h4,
-#section5 h4 {
+#section5 h4,
+#section6 h4 {
 	text-align: center;
 }
 
 #section3 h5,
 #section4 h5,
-#section5 h5 {
+#section5 h5,
+#section6 h5  {
 	line-height: 1.5;
 }
 
@@ -467,7 +474,8 @@ span {
 .sec3_1 img,
 .sec3_3 img,
 .sec4_img img,
-.sec5_img img {
+.sec5_img img,
+.sec6_img img {
 	width: 100%;
 }
 
@@ -524,13 +532,15 @@ span {
 *****************************************/
 
 .sec4_info,
-.sec5_info {
+.sec5_info,
+.sec6_info {
 	width: 90%;
 	margin: 0 auto;
 }
 
 #section4 .sec4_info h4,
-#section5 .sec5_info h4 {
+#section5 .sec5_info h4,
+#section6 .sec6_info h4 {
 	text-align: left;
 	position: relative;
 	top: 50%;
@@ -538,7 +548,8 @@ span {
 }
 
 .sec4_info_title,
-.sec5_info_title {
+.sec5_info_title,
+.sec6_info_title {
 	width: 100%;
 	height: 7.5%;
 	background-color: rgba(251, 177, 29, 0.3);
@@ -546,7 +557,8 @@ span {
 }
 
 .sec4_info_title h4::after,
-.sec5_info_title h4::after {
+.sec5_info_title h4::after,
+.sec6_btn h4::after {
 	content: '\25BC';
 	color: #8e6828;
 	position: absolute;
@@ -555,14 +567,16 @@ span {
 }
 
 .sec4_info span,
-.sec5_info span {
+.sec5_info span,
+.sec6_info span {
 	border-style: solid;
 	border-width: 3vw 3vw 0 3vw;
 	border-color: #8e6828 transparent transparent transparent;
 }
 
 .sec4_img,
-.sec5_img {
+.sec5_img,
+.sec6_img {
 	display: none;
 	background: #fff url(../img/bg2.jpg);
 }
@@ -586,4 +600,30 @@ span {
 .sec5_3 div img {
 	width: auto;
 	height: 100%;
+}
+
+/*******************************************************************
+------------------------------section6------------------------------
+********************************************************************/
+
+.sec6_cover {
+	background: url(../img/mobile/circle_m_fruit.png) 45% top no-repeat;
+}
+
+.sec6_bg {
+	background: linear-gradient(#e0d7ba,#dfe8a5);
+}
+
+.sec6_text {
+	margin-bottom: 3vh;
+}
+
+.sec6_info a,
+.sec6_info a:hover,
+.sec6_info a:focus,
+.sec6_info a:link,
+.sec6_info a:active,
+.sec6_info a:visited {
+	color: #000;
+	text-decoration: none;
 }
