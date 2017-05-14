@@ -8,4 +8,9 @@ $(document).ready(function() {
     		$(this).addClass("clicked");         
     	}
 	});
+
+	$(".sec4_info_title").click(function() {
+		sec4_class = $(this).data('sec4');
+		$(".sec4_" + sec4_class).slideToggle("slow");
+	});
 });

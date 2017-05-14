@@ -411,54 +411,55 @@ span {
 ------------------------------section3------------------------------
 ********************************************************************/
 
-#section3 {
+#section3,
+#section4 {
 	width: 100%;
     position: relative;
     top: 10vh;
 }
 
-.sec3_readmore {
-	width: 33vw;
-	height: 33vw;
-	background: url(../img/mobile/text.svg) no-repeat;
-	background-size: contain;
-	position: absolute;
-	top: 2%;
-	right: 10%;
-}
-
-.sec3_cover {
+.sec3_cover,
+.sec4_cover {
 	width: 100%;
 	height: 59%;
 	background: url(../img/mobile/circle_m_daanriver.png) top no-repeat;
 }
 
-.sec3_bg {
+.sec3_bg,
+.sec4_bg {
 	display: inline-block;
 	width: 100%;
 	background: linear-gradient(#ccaf83,#fefce7);
 	position: relative;
 }
 
-.sec3_text {
+.sec3_text,
+.sec4_text {
 	width: 100%;
 	padding: 0 12vw 0;
 }
 
-#section3 h4 {
+#section3 h4,
+#section4 h4 {
 	font-size: 46px;
 	font-family: PingFangTC;
 	font-weight: bold;
 	margin-bottom: 4vh;
 }
 
-#section3 h5 {
+#section4 h4 {
+	text-align: center;
+}
+
+#section3 h5,
+#section4 h5 {
 	line-height: 1.5;
 }
 
 .sec3_info,
 .sec3_1 img,
-.sec3_3 img {
+.sec3_3 img,
+.sec4_img img {
 	width: 100%;
 }
 
@@ -493,3 +494,60 @@ span {
 	}
 }
 
+/*******************************************************************
+------------------------------section4------------------------------
+********************************************************************/
+
+.sec4_cover {
+	background: url(../img/mobile/circle_m_spice.png) top no-repeat;
+}
+
+.sec4_bg {
+	background: linear-gradient(#e3dabc,#dcce93);
+}
+
+.sec4_text {
+	margin-bottom: 3vh;
+}
+
+/****************************************
+-----------------drop_down--------------
+*****************************************/
+
+.sec4_info {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#section4 .sec4_info h4 {
+	text-align: left;
+	position: relative;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+.sec4_info_title {
+	width: 100%;
+	height: 7.5%;
+	background-color: rgba(251, 177, 29, 0.3);
+	padding: 0 6vw 0;
+}
+
+.sec4_info_title h4::after{
+	content: '\25BC';
+	color: #8e6828;
+	position: absolute;
+	right: 0;
+	transition: transform 0.6s;
+}
+
+.sec4_info span {
+	border-style: solid;
+	border-width: 3vw 3vw 0 3vw;
+	border-color: #8e6828 transparent transparent transparent;
+}
+
+.sec4_img {
+	display: none;
+	background: #fff url(../img/bg2.jpg);
+}
