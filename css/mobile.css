@@ -472,7 +472,7 @@ span {
 }
 
 .sec3_2,
-.sec5_2 div {
+.sec5_3 div {
 	width: 100%;
 	height: 65%;
 	overflow: scroll;
@@ -583,7 +583,7 @@ span {
 	margin-bottom: 3vh;
 }
 
-.sec5_2 div img {
+.sec5_3 div img {
 	width: auto;
 	height: 100%;
 }
