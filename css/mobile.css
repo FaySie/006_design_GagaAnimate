@@ -193,9 +193,13 @@ span {
 	width: 100%;
 	height: 6%;
 	margin-top: 4vh;
-	padding-bottom: 9vh;
+	padding-bottom: 12vh;
 	position: relative;
 	z-index: 1;
+}
+
+.footer h6:last-child {
+	color: #000;
 }
 
 /****************************************
@@ -468,11 +472,24 @@ span {
 	height: 100%;
 }
 
-@media (min-device-width: 768px) {
+/*平板以上裝置*/
+@media (min-device-width: 768px) and (max-device-width: 1279px) {
 	.sec3_cover {
 		width: 100%;
 		height: 77%;
 		background: url(../img/mobile/circle_m_daanriver.png) top no-repeat;
+	}
+}
+
+/*電腦以上裝置*/
+@media (min-device-width: 1280px) {
+	body h5 {
+		font-size: 22px;
+	}
+
+	body h6,
+	span {
+		font-size: 16px;
 	}
 }
 
